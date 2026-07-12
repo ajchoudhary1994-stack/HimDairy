@@ -49,7 +49,7 @@ Editing the `PRODUCTS` array is enough — cards, quantity steppers, the order s
 .hero{ background: linear-gradient(180deg, rgba(15,61,46,.85), rgba(10,42,31,.92)), url("../assets/farm-hero.jpg") center/cover; }
 ```
 
-**Google Map** — in `index.html`, the map `<iframe>` currently points to a generic "Kangra, Himachal Pradesh" search. Replace the `src` with your exact farm location (share → embed a map from Google Maps) once you have a pinned address.
+**Google Map** — in `index.html`, the map `<iframe>` currently points to a generic "Palampur, Kangra, Himachal Pradesh" search. Replace the `src` with your exact pinned farm location (share → embed a map from Google Maps) once you have the precise address.
 
 **Reviews / FAQ copy** — plain HTML in the relevant `<section>` of `index.html`; duplicate a `.review-card` or `.faq-item` block to add more.
 
