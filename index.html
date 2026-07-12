@@ -3,2018 +3,397 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HimDairy — Pure from the Himalayas</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root {
-  --green-deep:   #0E2418;
-  --green-mid:    #1B3A2D;
-  --green-light:  #2D5A3D;
-  --green-mist:   #4A7A5A;
-  --cream:        #F5F0E8;
-  --cream-warm:   #EDE5D4;
-  --milk-white:   #FDFAF4;
-  --gold:         #C8861A;
-  --gold-light:   #D9A441;
-  --gold-pale:    #F0C96A;
-  --brown:        #2C1A0E;
-  --stone:        #7A6E62;
-  --border-cream: #DDD5C0;
-}
+<title>HimDairy — Purity from the Himalayas | Fresh A2 Milk, Ghee & Paneer Delivered</title>
+<meta name="description" content="Order farm-fresh Himalayan cow &amp; buffalo milk, curd, paneer, desi ghee and lassi straight from HimDairy. Daily delivery, zero preservatives, 100% pure — order in seconds on WhatsApp.">
+<meta name="keywords" content="HimDairy, Himachal milk delivery, A2 cow milk, buffalo milk, desi ghee, paneer, curd, Kangra dairy, fresh milk order online">
+<meta name="theme-color" content="#0F3D2E">
+<link rel="canonical" href="https://himdairy.in/">
 
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  font-family:'Plus Jakarta Sans',sans-serif;
-  background:var(--cream);
-  color:var(--brown);
-  overflow-x:hidden;
-}
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HimDairy">
+<meta property="og:title" content="HimDairy — Purity from the Himalayas">
+<meta property="og:description" content="Farm-fresh Himalayan dairy — milk, ghee, paneer, curd &amp; lassi — delivered daily. Order on WhatsApp in seconds.">
+<meta property="og:image" content="https://himdairy.in/assets/og-image.jpg">
+<meta property="og:url" content="https://himdairy.in/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HimDairy — Purity from the Himalayas">
+<meta name="twitter:description" content="Farm-fresh Himalayan dairy delivered daily. Order on WhatsApp in seconds.">
 
-/* ═══════════════════════════
-   NAVBAR
-═══════════════════════════ */
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:500;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:1.1rem 4rem;
-  transition:all 0.35s;
-}
-nav.scrolled{
-  background:rgba(14,36,24,0.97);
-  backdrop-filter:blur(16px);
-  padding:0.75rem 4rem;
-  box-shadow:0 2px 30px rgba(0,0,0,0.3);
-  border-bottom:1px solid rgba(200,134,26,0.2);
-}
-.logo-wrap{display:flex;align-items:center;gap:0.7rem;text-decoration:none}
-.logo-mountain{
-  width:42px;height:42px;
-  background:linear-gradient(135deg,var(--gold),var(--gold-light));
-  border-radius:10px;
-  display:flex;align-items:center;justify-content:center;
-  font-size:1.3rem;
-  box-shadow:0 4px 12px rgba(200,134,26,0.4);
-}
-.logo-text{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.9rem;font-weight:700;
-  color:white;letter-spacing:-0.01em;line-height:1;
-}
-.logo-text span{color:var(--gold-light)}
-.logo-sub{
-  font-size:0.55rem;letter-spacing:0.18em;
-  color:rgba(255,255,255,0.5);
-  text-transform:uppercase;margin-top:1px;
-}
-.nav-links{display:flex;gap:2.5rem;list-style:none}
-.nav-links a{
-  color:rgba(255,255,255,0.75);text-decoration:none;
-  font-size:0.86rem;font-weight:500;letter-spacing:0.04em;
-  transition:color .2s;position:relative;
-}
-.nav-links a::after{
-  content:'';position:absolute;bottom:-3px;left:0;right:0;
-  height:1px;background:var(--gold-light);
-  transform:scaleX(0);transition:transform .2s;
-}
-.nav-links a:hover{color:var(--gold-light)}
-.nav-links a:hover::after{transform:scaleX(1)}
-.nav-right{display:flex;align-items:center;gap:1.2rem}
-.btn-nav{
-  background:linear-gradient(135deg,var(--gold),var(--gold-light));
-  color:var(--brown);
-  padding:0.55rem 1.5rem;border-radius:100px;
-  border:none;cursor:pointer;font-size:0.85rem;font-weight:700;
-  font-family:inherit;transition:all .2s;text-decoration:none;
-  box-shadow:0 3px 12px rgba(200,134,26,0.35);
-}
-.btn-nav:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(200,134,26,0.5)}
-.cart-btn{
-  color:white;font-size:1.25rem;cursor:pointer;
-  position:relative;padding:0.4rem;
-}
-.cart-badge{
-  position:absolute;top:-4px;right:-6px;
-  background:var(--gold);color:var(--brown);
-  font-size:0.58rem;font-weight:800;border-radius:50%;
-  width:17px;height:17px;display:flex;align-items:center;justify-content:center;
-}
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230F3D2E'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='%23C89B3C' font-family='Georgia,serif'%3EH%3C/text%3E%3C/svg%3E">
 
-/* ═══════════════════════════
-   HERO — Packet-style split
-═══════════════════════════ */
-.hero{
-  min-height:100vh;
-  background:linear-gradient(160deg, #071510 0%, #0E2418 30%, #1B3A2D 60%, #2D5A3D 100%);
-  position:relative;
-  display:flex;align-items:center;
-  overflow:hidden;
-  padding:8rem 4rem 0;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-/* Full-screen background video */
-.hero-video{
-  position:absolute;top:0;left:0;
-  width:100%;height:100%;
-  object-fit:cover;object-position:center;
-  z-index:0;
-  pointer-events:none;
-}
-/* Dark overlay for text readability over the video */
-.hero-overlay{
-  position:absolute;inset:0;
-  background:linear-gradient(160deg, rgba(7,21,16,0.85) 0%, rgba(14,36,24,0.75) 30%, rgba(27,58,45,0.65) 60%, rgba(45,90,61,0.55) 100%);
-  z-index:1;
-}
+<link rel="stylesheet" href="css/style.css">
 
-/* Subtle grid texture like packet */
-.hero::before{
-  content:'';
-  position:absolute;inset:0;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
-  background-size:60px 60px;
-  z-index:0;
-}
-
-/* Stars */
-.hero-stars{
-  position:absolute;top:0;left:0;right:0;height:60%;
-  background-image:
-    radial-gradient(1.5px 1.5px at 8% 12%, rgba(255,255,255,0.7) 0%, transparent 100%),
-    radial-gradient(1px 1px at 20% 6%, rgba(255,255,255,0.5) 0%, transparent 100%),
-    radial-gradient(2px 2px at 35% 18%, rgba(255,255,255,0.6) 0%, transparent 100%),
-    radial-gradient(1px 1px at 50% 4%, rgba(255,255,255,0.4) 0%, transparent 100%),
-    radial-gradient(1.5px 1.5px at 65% 14%, rgba(255,255,255,0.55) 0%, transparent 100%),
-    radial-gradient(1px 1px at 78% 8%, rgba(255,255,255,0.45) 0%, transparent 100%),
-    radial-gradient(2px 2px at 90% 20%, rgba(255,255,255,0.5) 0%, transparent 100%),
-    radial-gradient(1px 1px at 12% 30%, rgba(255,255,255,0.25) 0%, transparent 100%),
-    radial-gradient(1px 1px at 45% 25%, rgba(255,255,255,0.3) 0%, transparent 100%),
-    radial-gradient(1.5px 1.5px at 72% 28%, rgba(255,255,255,0.35) 0%, transparent 100%);
-  z-index:0;
-}
-
-/* Gold sun like on packet */
-.hero-sun{
-  position:absolute;top:10%;right:18%;
-  width:90px;height:90px;
-  background:radial-gradient(circle at 40% 40%, #fff8d0, #D9A441 55%, rgba(200,134,26,0) 100%);
-  border-radius:50%;
-  box-shadow:0 0 60px 20px rgba(217,164,65,0.35), 0 0 120px 50px rgba(217,164,65,0.1);
-  z-index:1;
-}
-
-/* Mountain range SVG at bottom — exactly like packet */
-.hero-mountains{
-  position:absolute;bottom:0;left:0;right:0;
-  height:50%;z-index:1;
-}
-
-/* Milk splash wave at bottom */
-.hero-milk{
-  position:absolute;bottom:0;left:0;right:0;
-  height:32%;z-index:2;
-}
-.hero-milk svg{width:100%;height:100%}
-
-.hero-content{
-  position:relative;z-index:3;
-  max-width:620px;
-  padding-bottom:22vh;
-}
-
-.hero-badge{
-  display:inline-flex;align-items:center;gap:0.5rem;
-  background:rgba(200,134,26,0.18);
-  border:1px solid rgba(200,134,26,0.45);
-  color:var(--gold-light);font-size:0.76rem;font-weight:700;
-  letter-spacing:0.12em;text-transform:uppercase;
-  padding:0.38rem 1rem;border-radius:100px;margin-bottom:1.8rem;
-}
-.badge-dot{
-  width:6px;height:6px;border-radius:50%;
-  background:var(--gold-light);
-  box-shadow:0 0 6px var(--gold-light);
-  animation:pulse 2s infinite;
-}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
-
-.hero h1{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(3.2rem,6.5vw,5.5rem);
-  font-weight:700;line-height:1.06;
-  color:white;margin-bottom:0.8rem;
-  letter-spacing:-0.02em;
-}
-.hero h1 em{color:var(--gold-light);font-style:italic}
-.hero-tagline{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.3rem;font-style:italic;
-  color:rgba(255,255,255,0.55);
-  margin-bottom:1.5rem;letter-spacing:0.02em;
-}
-.hero p{
-  font-size:0.97rem;color:rgba(255,255,255,0.68);
-  line-height:1.85;max-width:480px;margin-bottom:2.5rem;
-}
-.hero-cta{display:flex;gap:1rem;flex-wrap:wrap}
-.btn-primary{
-  background:linear-gradient(135deg,var(--gold),#E0A82E);
-  color:var(--brown);padding:1rem 2.2rem;border-radius:100px;
-  border:none;cursor:pointer;font-size:0.95rem;font-weight:700;
-  font-family:inherit;transition:all .25s;text-decoration:none;
-  display:inline-flex;align-items:center;gap:0.5rem;
-  box-shadow:0 8px 28px rgba(200,134,26,0.4);
-}
-.btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(200,134,26,0.5)}
-.btn-ghost{
-  background:rgba(255,255,255,0.06);
-  color:white;padding:1rem 2.2rem;border-radius:100px;
-  border:1.5px solid rgba(255,255,255,0.2);
-  cursor:pointer;font-size:0.95rem;font-weight:500;
-  font-family:inherit;transition:all .2s;text-decoration:none;
-  backdrop-filter:blur(8px);
-}
-.btn-ghost:hover{border-color:var(--gold-light);color:var(--gold-light);background:rgba(200,134,26,0.1)}
-
-/* Right side — floating packet stats */
-.hero-float{
-  position:absolute;right:4rem;top:50%;transform:translateY(-50%);
-  z-index:3;display:flex;flex-direction:column;gap:1rem;
-  padding-bottom:10vh;
-}
-.float-card{
-  background:rgba(255,255,255,0.07);
-  border:1px solid rgba(255,255,255,0.12);
-  backdrop-filter:blur(14px);
-  border-radius:18px;padding:1rem 1.4rem;
-  min-width:170px;
-}
-.float-card-num{
-  font-family:'Cormorant Garamond',serif;
-  font-size:2rem;font-weight:700;
-  color:var(--gold-light);line-height:1;
-}
-.float-card-label{font-size:0.72rem;color:rgba(255,255,255,0.55);margin-top:0.25rem}
-
-/* A2 badge — like packet */
-.a2-badge{
-  position:absolute;right:4rem;bottom:34%;z-index:4;
-  width:90px;height:90px;
-  background:linear-gradient(145deg,#D9A441,#C8861A);
-  border-radius:50%;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  box-shadow:0 6px 24px rgba(200,134,26,0.5),inset 0 1px 0 rgba(255,255,255,0.3);
-  border:2px solid rgba(255,255,255,0.2);
-}
-.a2-badge .a2-big{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;color:white;line-height:1}
-.a2-badge .a2-small{font-size:0.5rem;font-weight:700;color:rgba(255,255,255,0.85);letter-spacing:0.08em;text-align:center;line-height:1.3;margin-top:2px}
-
-/* ═══════════════════════════
-   ORIGIN TICKER STRIP
-═══════════════════════════ */
-.origin-strip{
-  background:var(--green-deep);
-  padding:1.1rem 0;
-  border-top:1px solid rgba(200,134,26,0.3);
-  border-bottom:1px solid rgba(200,134,26,0.3);
-  overflow:hidden;
-  position:relative;
-}
-.ticker-wrap{display:flex;animation:ticker 25s linear infinite;white-space:nowrap}
-.ticker-wrap:hover{animation-play-state:paused}
-.ticker-item{
-  display:inline-flex;align-items:center;gap:0.5rem;
-  color:rgba(255,255,255,0.7);font-size:0.83rem;font-weight:500;
-  padding:0 2.5rem;
-}
-.ticker-item strong{color:var(--gold-light)}
-.ticker-dot{color:var(--gold);opacity:0.5}
-@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-
-/* ═══════════════════════════
-   PROMISE SECTION — cream bg
-═══════════════════════════ */
-.promise-section{
-  background:var(--cream);
-  padding:6rem 4rem;
-  position:relative;
-}
-.promise-section::before{
-  content:'';
-  position:absolute;top:0;left:0;right:0;
-  height:4px;
-  background:linear-gradient(90deg,transparent,var(--gold),transparent);
-}
-.section-eyebrow{
-  font-size:0.72rem;font-weight:700;letter-spacing:0.2em;
-  text-transform:uppercase;color:var(--gold);
-  margin-bottom:0.6rem;
-}
-.section-title{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(2rem,4vw,3rem);font-weight:700;
-  line-height:1.12;color:var(--green-deep);margin-bottom:1rem;
-}
-.section-sub{color:var(--stone);font-size:0.97rem;line-height:1.8;max-width:520px}
-
-.promise-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:3rem;margin-top:3.5rem;align-items:center;
-}
-
-/* Packet visual recreation */
-.packet-visual{
-  position:relative;
-  background:linear-gradient(160deg,var(--green-deep),var(--green-mid),var(--green-light));
-  border-radius:28px;
-  padding:3rem 2.5rem 2rem;
-  overflow:hidden;
-  border:1px solid rgba(200,134,26,0.2);
-  box-shadow:0 20px 60px rgba(14,36,24,0.25);
-}
-.packet-visual::before{
-  content:'';
-  position:absolute;top:0;left:0;right:0;height:55%;
-  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 300'%3E%3Cpath d='M0,300 L0,180 L80,120 L160,160 L240,80 L320,130 L400,50 L480,110 L560,40 L640,100 L720,60 L800,130 L800,300Z' fill='rgba(255,255,255,0.04)'/%3E%3Cpath d='M0,300 L0,220 L100,160 L200,190 L300,120 L400,170 L500,100 L600,150 L700,110 L800,160 L800,300Z' fill='rgba(255,255,255,0.05)'/%3E%3C/svg%3E") center/cover no-repeat;
-}
-.packet-sun{
-  position:absolute;top:1.5rem;right:2rem;
-  width:55px;height:55px;
-  background:radial-gradient(circle at 40% 40%,#fff8d0,#D9A441 60%,transparent 100%);
-  border-radius:50%;
-  box-shadow:0 0 30px 10px rgba(217,164,65,0.35);
-}
-.packet-logo-area{
-  text-align:center;position:relative;z-index:1;margin-bottom:1.2rem;
-}
-.packet-brand{
-  font-family:'Cormorant Garamond',serif;
-  font-size:2.5rem;font-weight:700;
-  color:white;letter-spacing:-0.01em;line-height:1;
-}
-.packet-brand span{color:var(--gold-light)}
-.packet-tagline-small{
-  font-size:0.65rem;font-weight:700;
-  color:rgba(255,255,255,0.55);letter-spacing:0.2em;
-  text-transform:uppercase;margin-top:0.2rem;
-}
-.packet-italic{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.1rem;font-style:italic;
-  color:rgba(255,255,255,0.75);text-align:center;
-  margin:0.8rem 0 1rem;position:relative;z-index:1;
-}
-.packet-icons-row{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  gap:0.5rem;position:relative;z-index:1;
-}
-.pack-icon-item{
-  background:rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.1);
-  border-radius:12px;padding:0.6rem 0.4rem;
-  text-align:center;
-}
-.pack-icon-item .ico{font-size:1.2rem;margin-bottom:0.25rem}
-.pack-icon-item p{font-size:0.56rem;color:rgba(255,255,255,0.6);line-height:1.4}
-.packet-footer-text{
-  text-align:center;margin-top:1rem;
-  font-size:0.65rem;letter-spacing:0.18em;
-  color:var(--gold-light);text-transform:uppercase;
-  font-weight:700;position:relative;z-index:1;
-  border-top:1px solid rgba(200,134,26,0.3);padding-top:0.8rem;
-}
-
-.promise-points{display:flex;flex-direction:column;gap:1.2rem}
-.promise-point{
-  display:flex;gap:1rem;align-items:flex-start;
-  padding:1.3rem;border-radius:18px;
-  background:white;
-  border:1.5px solid var(--border-cream);
-  transition:all .25s;
-  box-shadow:0 2px 12px rgba(0,0,0,0.04);
-}
-.promise-point:hover{
-  border-color:rgba(200,134,26,0.4);
-  box-shadow:0 6px 24px rgba(14,36,24,0.1);
-  transform:translateX(5px);
-}
-.pp-icon{
-  min-width:46px;height:46px;
-  background:linear-gradient(135deg,var(--green-deep),var(--green-light));
-  border-radius:13px;display:flex;align-items:center;justify-content:center;
-  font-size:1.25rem;flex-shrink:0;
-}
-.pp-title{font-weight:700;font-size:0.93rem;color:var(--green-deep);margin-bottom:0.2rem}
-.pp-text{font-size:0.82rem;color:var(--stone);line-height:1.65}
-
-/* ═══════════════════════════
-   PRODUCTS — Green dark bg
-═══════════════════════════ */
-.products-section{
-  padding:6rem 4rem;
-  background:linear-gradient(180deg,var(--green-deep) 0%,var(--green-mid) 100%);
-  position:relative;
-  overflow:hidden;
-}
-.products-section::before{
-  content:'';position:absolute;inset:0;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);
-  background-size:50px 50px;
-}
-.products-header{
-  display:flex;align-items:flex-end;
-  justify-content:space-between;margin-bottom:2.5rem;
-  flex-wrap:wrap;gap:1rem;position:relative;z-index:1;
-}
-.products-section .section-eyebrow{color:var(--gold-light)}
-.products-section .section-title{color:white}
-.filter-row{display:flex;gap:0.5rem;flex-wrap:wrap}
-.ftab{
-  padding:0.45rem 1.2rem;border-radius:100px;
-  border:1.5px solid rgba(255,255,255,0.15);
-  background:transparent;
-  font-family:inherit;font-size:0.82rem;font-weight:500;
-  color:rgba(255,255,255,0.55);cursor:pointer;transition:all .15s;
-}
-.ftab.active{
-  background:linear-gradient(135deg,var(--gold),var(--gold-light));
-  color:var(--brown);border-color:transparent;font-weight:700;
-}
-.ftab:hover:not(.active){border-color:rgba(200,134,26,0.5);color:var(--gold-light)}
-
-.products-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(255px,1fr));
-  gap:1.5rem;position:relative;z-index:1;
-}
-.product-card{
-  background:white;border-radius:22px;
-  border:1.5px solid var(--border-cream);
-  overflow:hidden;cursor:pointer;
-  position:relative;
-  box-shadow:0 4px 20px rgba(14,36,24,0.08);
-  transition:all .4s cubic-bezier(.2,.8,.2,1);
-}
-.product-card::after{
-  content:'';position:absolute;inset:0;border-radius:22px;
-  padding:1.5px;pointer-events:none;
-  background:linear-gradient(135deg,transparent 35%,rgba(200,134,26,0.55),transparent 65%);
-  -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
-  -webkit-mask-composite:xor;mask-composite:exclude;
-  opacity:0;transition:opacity .35s;
-}
-.product-card:hover{
-  transform:translateY(-10px);
-  box-shadow:0 24px 55px rgba(14,36,24,0.28),0 0 0 1px rgba(200,134,26,0.12);
-  border-color:rgba(200,134,26,0.4);
-}
-.product-card:hover::after{opacity:1}
-.product-img{
-  height:195px;
-  display:flex;align-items:center;justify-content:center;
-  font-size:5.5rem;position:relative;overflow:hidden;
-}
-.product-img::before{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(circle at 50% 38%,rgba(255,255,255,0.5),transparent 62%);
-  opacity:0.75;
-}
-.product-img::after{
-  content:'';position:absolute;top:-60%;left:-25%;
-  width:55%;height:220%;
-  background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,0.4) 48%,transparent 65%);
-  transform:translateX(-160%);
-  transition:transform .85s ease;
-}
-.product-card:hover .product-img::after{transform:translateX(230%)}
-.product-img span,.product-img > *{position:relative;z-index:1}
-.p-badge{
-  position:absolute;top:12px;left:12px;z-index:2;
-  font-size:0.63rem;font-weight:700;padding:0.32rem 0.8rem;
-  border-radius:100px;letter-spacing:0.06em;text-transform:uppercase;
-  backdrop-filter:blur(6px);
-  box-shadow:0 3px 10px rgba(0,0,0,0.15);
-}
-.p-badge.organic{background:rgba(14,36,24,0.88);color:white;border:1px solid rgba(255,255,255,0.15)}
-.p-badge.himachali{background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--brown)}
-.p-badge.bestseller{background:rgba(44,26,14,0.92);color:var(--gold-light);border:1px solid rgba(200,134,26,0.4)}
-.altitude-tag{
-  position:absolute;top:12px;right:12px;z-index:2;
-  background:rgba(14,36,24,0.72);color:rgba(255,255,255,0.92);
-  font-size:0.63rem;font-weight:600;
-  padding:0.24rem 0.65rem;border-radius:100px;
-  backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.12);
-}
-.product-body{padding:1.2rem 1.35rem 1.4rem}
-.p-stars{color:var(--gold);font-size:0.73rem;margin-bottom:0.45rem;letter-spacing:1.5px}
-.p-name{font-weight:700;font-size:0.99rem;color:var(--green-deep);margin-bottom:0.2rem;letter-spacing:-0.01em}
-.p-origin{font-size:0.74rem;color:var(--stone);margin-bottom:0.85rem}
-.p-footer{display:flex;align-items:center;justify-content:space-between;padding-top:0.85rem;border-top:1px dashed var(--border-cream)}
-.p-price{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.55rem;font-weight:700;color:var(--green-deep);
-}
-.p-price small{font-family:'Plus Jakarta Sans',sans-serif;font-size:0.7rem;color:var(--stone);font-weight:400}
-.add-btn{
-  width:42px;height:42px;border-radius:50%;
-  background:linear-gradient(135deg,var(--green-deep),var(--green-light));
-  color:white;border:none;font-size:1.5rem;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;
-  transition:all .25s cubic-bezier(.34,1.56,.64,1);
-  box-shadow:0 4px 14px rgba(14,36,24,0.35);
-  position:relative;
-}
-.add-btn::before{
-  content:'';position:absolute;inset:-5px;border-radius:50%;
-  border:1.5px solid rgba(200,134,26,0.5);
-  opacity:0;transition:all .3s;
-}
-.add-btn:hover{background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--brown);transform:scale(1.12) rotate(90deg);box-shadow:0 8px 22px rgba(200,134,26,0.45)}
-.add-btn:hover::before{opacity:1;inset:-8px}
-
-/* ═══════════════════════════
-   NUTRITION / DID YOU KNOW — 
-   Cream background like packet back
-═══════════════════════════ */
-.facts-section{
-  background:var(--cream-warm);
-  padding:6rem 4rem;
-  position:relative;
-}
-.facts-section::before{
-  content:'';position:absolute;inset:0;
-  background:url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20 Q10 0 20 20 Q30 40 40 20' stroke='rgba(200,134,26,0.06)' fill='none' stroke-width='1'/%3E%3C/svg%3E") repeat;
-}
-.facts-grid{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:3rem;align-items:start;position:relative;z-index:1;
-}
-.nutrition-card{
-  background:white;border-radius:22px;
-  border:1.5px solid var(--border-cream);
-  padding:2rem;
-  box-shadow:0 8px 30px rgba(0,0,0,0.06);
-}
-.nc-header{
-  display:flex;align-items:center;gap:1rem;
-  padding-bottom:1rem;border-bottom:2px solid var(--green-deep);
-  margin-bottom:1.2rem;
-}
-.nc-title{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.4rem;font-weight:700;color:var(--green-deep);
-}
-.nc-sub{font-size:0.72rem;color:var(--stone)}
-.nutrition-row{
-  display:flex;justify-content:space-between;align-items:center;
-  padding:0.65rem 0;border-bottom:1px solid var(--border-cream);
-}
-.nutrition-row:last-child{border-bottom:none}
-.nr-label{font-size:0.88rem;color:var(--brown)}
-.nr-value{font-weight:700;font-size:0.9rem;color:var(--green-deep)}
-.nc-footer{
-  margin-top:1rem;padding:0.8rem;
-  background:var(--cream);border-radius:12px;
-  font-size:0.75rem;color:var(--stone);text-align:center;
-}
-
-.did-you-know{display:flex;flex-direction:column;gap:1.2rem}
-.dyk-card{
-  background:white;border-radius:18px;
-  border:1.5px solid var(--border-cream);
-  padding:1.2rem 1.5rem;
-  display:flex;gap:1rem;align-items:flex-start;
-  transition:all .2s;
-  box-shadow:0 2px 10px rgba(0,0,0,0.04);
-}
-.dyk-card:hover{
-  border-color:rgba(200,134,26,0.35);
-  transform:translateX(4px);
-  box-shadow:0 6px 20px rgba(14,36,24,0.08);
-}
-.dyk-icon{
-  min-width:44px;height:44px;
-  background:linear-gradient(135deg,var(--green-deep),var(--green-light));
-  border-radius:12px;display:flex;align-items:center;justify-content:center;
-  font-size:1.2rem;flex-shrink:0;
-}
-.dyk-title{font-weight:700;font-size:0.9rem;color:var(--green-deep);margin-bottom:0.2rem}
-.dyk-text{font-size:0.8rem;color:var(--stone);line-height:1.65}
-
-/* ═══════════════════════════
-   ORDER SECTION
-═══════════════════════════ */
-.order-section{
-  background:linear-gradient(160deg,var(--green-deep),var(--green-mid));
-  padding:6rem 4rem;position:relative;overflow:hidden;
-}
-.order-section::after{
-  content:'🏔️';
-  position:absolute;right:-30px;bottom:-30px;
-  font-size:16rem;opacity:0.04;line-height:1;pointer-events:none;
-}
-.order-top{
-  text-align:center;margin-bottom:3rem;position:relative;z-index:1;
-}
-.order-section .section-eyebrow{color:var(--gold-light)}
-.order-section .section-title{color:white;margin:0 auto 0.8rem}
-.order-sub{
-  color:rgba(255,255,255,0.6);font-size:0.95rem;
-  max-width:550px;margin:0 auto 2rem;line-height:1.8;
-}
-.order-product-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
-  gap:1.2rem;
-  position:relative;z-index:1;
-  margin-bottom:2.5rem;
-}
-.opcard{
-  background:rgba(255,255,255,0.07);
-  border:1px solid rgba(255,255,255,0.14);
-  border-radius:20px;padding:1.3rem 1rem;
-  text-align:center;
-  backdrop-filter:blur(8px);
-  transition:all .25s;
-}
-.opcard:hover{
-  background:rgba(255,255,255,0.13);
-  border-color:rgba(200,134,26,0.5);
-  transform:translateY(-4px);
-}
-.opcard-icon{font-size:2.8rem;margin-bottom:0.6rem}
-.opcard-name{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.05rem;font-weight:700;color:white;margin-bottom:0.2rem;
-}
-.opcard-farm{font-size:0.7rem;color:rgba(255,255,255,0.45);margin-bottom:0.6rem}
-.opcard-price{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.4rem;font-weight:700;color:var(--gold-light);margin-bottom:0.8rem;
-}
-.opcard-price small{font-size:0.68rem;color:rgba(255,255,255,0.4);font-family:'Plus Jakarta Sans',sans-serif}
-.opcard-btns{display:flex;gap:0.5rem;justify-content:center}
-.ocbtn-cart{
-  background:linear-gradient(135deg,var(--gold),var(--gold-light));
-  color:var(--brown);border:none;padding:0.45rem 1rem;
-  border-radius:100px;font-weight:700;font-family:inherit;
-  cursor:pointer;font-size:0.8rem;transition:all .15s;
-}
-.ocbtn-cart:hover{transform:scale(1.05)}
-.ocbtn-wa{
-  background:rgba(37,211,102,0.8);color:white;border:none;
-  padding:0.45rem 0.9rem;border-radius:100px;
-  font-weight:700;font-family:inherit;cursor:pointer;
-  font-size:0.8rem;text-decoration:none;
-  display:inline-flex;align-items:center;gap:0.3rem;
-  transition:all .15s;
-}
-.ocbtn-wa:hover{background:rgba(37,211,102,1)}
-
-.order-cta-row{
-  display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;
-  position:relative;z-index:1;
-}
-.btn-wa-big{
-  background:rgba(37,211,102,0.9);color:white;
-  padding:1rem 2.5rem;border-radius:100px;
-  border:none;cursor:pointer;font-size:1rem;font-weight:700;
-  font-family:inherit;transition:all .25s;text-decoration:none;
-  display:inline-flex;align-items:center;gap:0.6rem;
-  box-shadow:0 8px 24px rgba(37,211,102,0.3);
-}
-.btn-wa-big:hover{background:#25D366;transform:translateY(-3px);box-shadow:0 14px 34px rgba(37,211,102,0.4)}
-
-.order-perks{
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
-  gap:1rem;margin-top:3rem;position:relative;z-index:1;
-}
-.operk{
-  background:rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.1);
-  border-radius:16px;padding:1.2rem 1.4rem;
-  display:flex;align-items:center;gap:1rem;
-}
-.operk-icon{font-size:1.8rem}
-.operk-num{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.5rem;font-weight:700;color:var(--gold-light);line-height:1;
-}
-.operk-label{font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:0.1rem}
-
-/* ═══════════════════════════
-   STORY SECTION — cream
-═══════════════════════════ */
-.story-section{
-  background:var(--cream);
-  padding:6rem 4rem;
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:4rem;align-items:center;
-  position:relative;
-}
-.story-section::before{
-  content:'';position:absolute;top:0;left:0;right:0;
-  height:4px;background:linear-gradient(90deg,transparent,var(--gold),transparent);
-}
-.story-p{color:var(--stone);font-size:0.95rem;line-height:1.85;margin-bottom:1rem}
-.story-quote{
-  border-left:3px solid var(--gold);
-  padding-left:1.3rem;margin:1.5rem 0;
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.25rem;font-style:italic;color:var(--green-deep);
-  line-height:1.6;
-}
-.story-cards{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.story-card{
-  background:white;border:1.5px solid var(--border-cream);
-  border-radius:18px;padding:1.5rem;text-align:center;
-  box-shadow:0 4px 16px rgba(0,0,0,0.05);transition:all .2s;
-}
-.story-card:hover{border-color:rgba(200,134,26,0.35);transform:translateY(-3px)}
-.story-card-icon{font-size:2rem;margin-bottom:0.5rem}
-.story-card-num{
-  font-family:'Cormorant Garamond',serif;
-  font-size:2rem;font-weight:700;color:var(--gold);
-}
-.story-card-label{font-size:0.73rem;color:var(--stone);margin-top:0.2rem}
-.story-card.full{grid-column:span 2}
-
-/* ═══════════════════════════
-   TESTIMONIALS
-═══════════════════════════ */
-.testimonials{
-  padding:6rem 4rem;
-  background:linear-gradient(180deg,var(--green-deep),#0a1e12);
-  position:relative;overflow:hidden;
-}
-.testimonials::before{
-  content:'';position:absolute;inset:0;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);
-  background-size:50px 50px;
-}
-.testimonials .section-eyebrow{color:var(--gold-light)}
-.testimonials .section-title{color:white;margin-bottom:2.5rem}
-.testimonials-grid{
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));
-  gap:1.5rem;position:relative;z-index:1;
-}
-.tcard{
-  background:rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.1);
-  border-radius:20px;padding:1.8rem;
-  backdrop-filter:blur(10px);
-  position:relative;overflow:hidden;
-  transition:all .35s cubic-bezier(.2,.8,.2,1);
-}
-.tcard:hover{
-  border-color:rgba(200,134,26,0.45);
-  background:rgba(255,255,255,0.09);
-  transform:translateY(-6px);
-  box-shadow:0 20px 45px rgba(0,0,0,0.35),0 0 0 1px rgba(200,134,26,0.1);
-}
-.tcard::before{
-  content:'"';position:absolute;top:-18px;right:16px;
-  font-family:'Cormorant Garamond',serif;font-size:9rem;
-  color:rgba(200,134,26,0.12);line-height:1;z-index:0;
-}
-.t-stars{color:var(--gold-light);font-size:0.78rem;margin-bottom:0.9rem;letter-spacing:2px;position:relative;z-index:1}
-.tcard-text{font-size:0.9rem;line-height:1.8;color:rgba(255,255,255,0.72);position:relative;z-index:1;margin-bottom:1.3rem;font-style:italic}
-.tcard-author{display:flex;align-items:center;gap:0.85rem;position:relative;z-index:1;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.08)}
-.avatar{
-  width:44px;height:44px;border-radius:50%;
-  background:linear-gradient(135deg,var(--green-mid),var(--green-light));
-  display:flex;align-items:center;justify-content:center;font-size:1.2rem;
-  border:1.5px solid rgba(200,134,26,0.4);
-  box-shadow:0 0 0 3px rgba(200,134,26,0.12),0 4px 12px rgba(0,0,0,0.3);
-  flex-shrink:0;
-}
-.author-name{font-weight:700;font-size:0.88rem;color:white;display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap}
-.author-name .verified{
-  font-size:0.58rem;color:var(--gold-light);background:rgba(200,134,26,0.15);
-  border:1px solid rgba(200,134,26,0.4);padding:0.08rem 0.42rem;border-radius:100px;
-  font-weight:700;letter-spacing:0.03em;text-transform:uppercase;
-}
-.author-loc{font-size:0.74rem;color:rgba(255,255,255,0.45);margin-top:0.15rem}
-
-/* ═══════════════════════════
-   NEWSLETTER
-═══════════════════════════ */
-.newsletter{
-  background:var(--cream);padding:5rem 4rem;
-  text-align:center;border-top:1px solid var(--border-cream);
-  position:relative;
-}
-.newsletter::before{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse at center top,rgba(200,134,26,0.06),transparent 60%);
-}
-.nl-sub{color:var(--stone);margin-bottom:2rem;font-size:0.95rem;position:relative;z-index:1}
-.nl-form{
-  display:flex;gap:0.8rem;max-width:420px;
-  margin:0 auto;flex-wrap:wrap;justify-content:center;
-  position:relative;z-index:1;
-}
-.nl-input{
-  flex:1;min-width:220px;
-  padding:0.9rem 1.4rem;border-radius:100px;
-  border:1.5px solid var(--border-cream);font-family:inherit;
-  font-size:0.9rem;background:white;outline:none;transition:border .15s;
-}
-.nl-input:focus{border-color:var(--gold)}
-
-/* ═══════════════════════════
-   FOOTER
-═══════════════════════════ */
-footer{
-  background:var(--green-deep);
-  color:rgba(255,255,255,0.45);
-  padding:3.5rem 4rem 2rem;
-  border-top:1px solid rgba(200,134,26,0.2);
-}
-.footer-grid{
-  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;
-  gap:3rem;margin-bottom:3rem;
-}
-.footer-brand p{font-size:0.82rem;line-height:1.75;max-width:250px;margin-top:0.8rem}
-.footer-col h4{color:white;font-weight:700;font-size:0.87rem;margin-bottom:1rem;letter-spacing:0.03em}
-.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.55rem}
-.footer-col a{color:rgba(255,255,255,0.42);font-size:0.81rem;text-decoration:none;transition:color .15s}
-.footer-col a:hover{color:var(--gold-light)}
-.footer-bottom{
-  border-top:1px solid rgba(255,255,255,0.07);
-  padding-top:1.5rem;
-  display:flex;justify-content:space-between;align-items:center;
-  font-size:0.77rem;flex-wrap:wrap;gap:0.5rem;
-}
-.footer-tagline{
-  color:var(--gold-light);font-style:italic;
-  font-family:'Cormorant Garamond',serif;font-size:0.95rem;
-}
-
-/* ═══════════════════════════
-   CART DRAWER
-═══════════════════════════ */
-.overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:600;opacity:0;pointer-events:none;transition:opacity .25s}
-.overlay.open{opacity:1;pointer-events:all}
-.cart-drawer{
-  position:fixed;right:0;top:0;bottom:0;width:380px;
-  background:white;z-index:601;transform:translateX(100%);
-  transition:transform .3s ease;display:flex;flex-direction:column;
-}
-.cart-drawer.open{transform:translateX(0)}
-.cart-head{
-  background:linear-gradient(135deg,var(--green-deep),var(--green-mid));
-  color:white;padding:1.5rem;
-  display:flex;justify-content:space-between;align-items:center;
-}
-.cart-head h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem}
-.close-x{background:none;border:none;color:white;font-size:1.4rem;cursor:pointer;opacity:0.7}
-.close-x:hover{opacity:1}
-.cart-body{flex:1;overflow-y:auto;padding:1.2rem}
-.cart-empty{text-align:center;color:var(--stone);font-size:0.9rem;margin-top:3rem}
-.cart-item-row{
-  display:flex;align-items:center;gap:0.8rem;
-  padding:0.8rem 0;border-bottom:1px solid var(--border-cream);
-}
-.ci-icon{
-  width:50px;height:50px;background:var(--cream);
-  border-radius:12px;display:flex;align-items:center;
-  justify-content:center;font-size:1.6rem;flex-shrink:0;
-}
-.ci-name{font-weight:700;font-size:0.87rem;color:var(--green-deep)}
-.ci-qty{font-size:0.76rem;color:var(--stone)}
-.ci-price{margin-left:auto;font-weight:700;color:var(--gold);font-size:0.9rem}
-.cart-foot{padding:1.2rem;border-top:2px solid var(--border-cream)}
-.cart-total-row{
-  display:flex;justify-content:space-between;
-  font-weight:700;font-size:1rem;
-  margin-bottom:1rem;color:var(--green-deep);
-}
-.btn-checkout{
-  width:100%;
-  background:linear-gradient(135deg,var(--green-deep),var(--green-light));
-  color:white;padding:1rem;border-radius:100px;
-  border:none;cursor:pointer;font-size:0.95rem;font-weight:700;
-  font-family:inherit;transition:background .2s;
-}
-.btn-checkout:hover{background:linear-gradient(135deg,var(--green-light),var(--green-mist))}
-
-/* ═══════════════════════════
-   TOAST
-═══════════════════════════ */
-.toast{
-  position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(60px);
-  background:var(--green-deep);color:white;padding:0.8rem 1.6rem;
-  border-radius:100px;font-size:0.87rem;font-weight:500;
-  z-index:700;transition:transform .3s;white-space:nowrap;
-  box-shadow:0 6px 24px rgba(0,0,0,0.25);
-  border:1px solid rgba(200,134,26,0.3);
-}
-.toast.show{transform:translateX(-50%) translateY(0)}
-
-/* ═══════════════════════════
-   CONTACT FAB + MODAL
-═══════════════════════════ */
-.contact-fab{
-  position:fixed;left:25px;bottom:25px;z-index:9999;
-  background:linear-gradient(135deg,var(--gold),var(--gold-light));
-  color:var(--brown);border:none;
-  border-radius:50px;padding:14px 20px;font-weight:700;
-  font-family:inherit;
-  box-shadow:0 10px 28px rgba(200,134,26,0.4);cursor:pointer;
-  font-size:0.88rem;transition:all .2s;
-}
-.contact-fab:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(200,134,26,0.5)}
-.contact-modal{
-  position:fixed;inset:0;background:rgba(0,0,0,0.6);
-  display:none;align-items:center;justify-content:center;z-index:10000;
-}
-.contact-card{
-  background:linear-gradient(160deg,var(--green-deep),var(--green-mid));
-  color:white;padding:2.5rem;border-radius:24px;width:min(90%,420px);
-  border:1px solid rgba(200,134,26,0.35);
-  box-shadow:0 20px 60px rgba(0,0,0,0.4);
-}
-.contact-card h3{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.6rem;color:var(--gold-light);margin-bottom:0.5rem;
-}
-.contact-card p{color:rgba(255,255,255,0.6);margin-bottom:1.5rem;font-size:0.88rem}
-.contact-card a{
-  color:white;text-decoration:none;display:flex;
-  align-items:center;gap:0.7rem;
-  margin:0.8rem 0;font-size:0.9rem;font-weight:500;
-  padding:0.7rem 1rem;
-  border-radius:12px;
-  background:rgba(255,255,255,0.07);
-  border:1px solid rgba(255,255,255,0.1);
-  transition:all .15s;
-}
-.contact-card a:hover{background:rgba(255,255,255,0.13);border-color:rgba(200,134,26,0.4)}
-
-/* ═══════════════════════════
-   RESPONSIVE
-═══════════════════════════ */
-@media(max-width:900px){
-  nav,nav.scrolled{padding:1rem 1.5rem}
-  .nav-links{display:none}
-  .hero{padding:7rem 1.5rem 0}
-  .hero-float,.a2-badge{display:none}
-  .promise-grid,.facts-grid,.story-section{grid-template-columns:1fr;padding:4rem 1.5rem}
-  .products-section,.order-section,.testimonials,.newsletter{padding:4rem 1.5rem}
-  .footer-grid{grid-template-columns:1fr 1fr}
-  footer{padding:3rem 1.5rem 2rem}
-  .cart-drawer{width:100%}
-  .origin-strip{padding:1rem 0}
-}
-
-/* ═══════════════════════════
-   VEG MARK (mandatory green symbol)
-═══════════════════════════ */
-.veg-mark{
-  display:inline-flex;align-items:center;justify-content:center;
-  width:14px;height:14px;min-width:14px;
-  border:1.6px solid #0C8A3E;border-radius:2px;
-  background:white;vertical-align:middle;margin-right:0.15rem;
-}
-.veg-mark::after{content:'';width:6px;height:6px;border-radius:50%;background:#0C8A3E}
-
-/* ═══════════════════════════
-   TRUST BAR
-═══════════════════════════ */
-.trust-bar{background:var(--milk-white);border-bottom:1px solid var(--border-cream);padding:1.8rem 4rem}
-.trust-bar-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
-.trust-item{display:flex;align-items:center;gap:0.7rem}
-.trust-icon{
-  min-width:44px;height:44px;border-radius:50%;
-  background:linear-gradient(135deg,var(--green-deep),var(--green-light));
-  display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;
-  box-shadow:0 4px 12px rgba(14,36,24,0.18);
-}
-.trust-label{font-weight:700;font-size:0.83rem;color:var(--green-deep);line-height:1.25}
-.trust-sub{font-size:0.68rem;color:var(--stone);margin-top:0.1rem}
-
-/* ═══════════════════════════
-   D2C BELIEF SECTION
-═══════════════════════════ */
-.d2c-section{background:linear-gradient(160deg,var(--green-deep),var(--green-mid));padding:5rem 4rem;position:relative;overflow:hidden}
-.d2c-section::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-.d2c-inner{max-width:1000px;margin:0 auto;text-align:center}
-.d2c-section .section-eyebrow{color:var(--gold-light)}
-.d2c-section .section-title{color:white;margin:0 auto 0.6rem}
-.d2c-sub{color:rgba(255,255,255,0.6);max-width:560px;margin:0 auto 3rem;font-size:0.95rem;line-height:1.75}
-.d2c-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;text-align:left}
-.d2c-point{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:16px;padding:1.3rem 1.4rem;display:flex;gap:0.8rem;align-items:flex-start}
-.d2c-check{color:var(--gold-light);font-size:1.1rem;font-weight:700;flex-shrink:0}
-.d2c-point-title{color:white;font-weight:700;font-size:0.88rem;margin-bottom:0.2rem}
-.d2c-point-text{color:rgba(255,255,255,0.55);font-size:0.78rem;line-height:1.6}
-
-/* ═══════════════════════════
-   QUALITY & TRACEABILITY MODAL
-═══════════════════════════ */
-.p-quality-link{
-  display:inline-flex;align-items:center;gap:0.3rem;
-  font-size:0.68rem;color:var(--green-light);font-weight:700;
-  margin-top:0.4rem;cursor:pointer;text-decoration:underline;text-underline-offset:2px;
-}
-.quality-modal{position:fixed;inset:0;background:rgba(0,0,0,0.65);display:none;align-items:center;justify-content:center;z-index:10001;padding:1.5rem}
-.quality-card{
-  background:var(--milk-white);color:var(--brown);padding:2rem;border-radius:22px;
-  width:min(94%,440px);border:1px solid var(--border-cream);
-  box-shadow:0 20px 60px rgba(0,0,0,0.4);max-height:88vh;overflow-y:auto;
-}
-.quality-card h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--green-deep);margin-bottom:0.2rem}
-.quality-card .q-origin{font-size:0.8rem;color:var(--stone);margin-bottom:1.2rem}
-.q-check-row{display:flex;gap:0.7rem;align-items:flex-start;padding:0.7rem 0;border-bottom:1px dashed var(--border-cream)}
-.q-check-row:last-of-type{border-bottom:none}
-.q-check-icon{color:#0C8A3E;font-weight:800;font-size:1rem}
-.q-check-title{font-weight:700;font-size:0.83rem;color:var(--green-deep)}
-.q-check-text{font-size:0.74rem;color:var(--stone);line-height:1.55}
-.q-qr-wrap{text-align:center;margin-top:1.3rem;padding-top:1.3rem;border-top:1px solid var(--border-cream)}
-.q-qr-wrap img{border-radius:10px;border:1px solid var(--border-cream)}
-.q-qr-wrap p{font-size:0.68rem;color:var(--stone);margin-top:0.5rem}
-.q-close-btn{margin-top:1.3rem;width:100%;padding:0.8rem;border:none;border-radius:100px;background:var(--green-deep);color:white;font-weight:700;cursor:pointer;font-family:inherit}
-
-/* ═══════════════════════════
-   SUBSCRIPTIONS
-═══════════════════════════ */
-.subs-section{background:var(--cream-warm);padding:6rem 4rem;position:relative}
-.subs-section::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-.subs-note{
-  text-align:center;max-width:600px;margin:0 auto 3rem;font-size:0.85rem;color:var(--stone);
-  line-height:1.7;background:white;border:1px solid var(--border-cream);border-radius:14px;padding:1rem 1.3rem;
-}
-.subs-note strong{color:var(--green-deep)}
-.daily-configurator{
-  background:linear-gradient(160deg,var(--green-deep),var(--green-mid),var(--green-light));
-  border-radius:26px;padding:2.5rem;margin-bottom:2.5rem;border:1px solid rgba(200,134,26,0.25);
-  box-shadow:0 20px 55px rgba(14,36,24,0.22);display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center;
-}
-.dc-title{font-family:'Cormorant Garamond',serif;color:white;font-size:1.8rem;font-weight:700;margin-bottom:0.5rem}
-.dc-title span{color:var(--gold-light)}
-.dc-sub{color:rgba(255,255,255,0.6);font-size:0.85rem;margin-bottom:1.5rem;line-height:1.6}
-.dc-fields{display:grid;grid-template-columns:1fr 1fr;gap:0.8rem}
-.dc-field label{display:block;font-size:0.65rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--gold-light);margin-bottom:0.35rem}
-.dc-field select{
-  width:100%;padding:0.65rem 0.8rem;border-radius:10px;border:1px solid rgba(255,255,255,0.2);
-  background:rgba(255,255,255,0.08);color:white;font-family:inherit;font-size:0.85rem;cursor:pointer;
-}
-.dc-field select option{color:var(--brown)}
-.dc-summary{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);border-radius:18px;padding:1.8rem}
-.dc-price-label{color:rgba(255,255,255,0.55);font-size:0.78rem}
-.dc-price-value{font-family:'Cormorant Garamond',serif;color:white;font-size:2.4rem;font-weight:700;margin:0.2rem 0}
-.dc-price-detail{font-size:0.72rem;color:rgba(255,255,255,0.45);margin-bottom:1.3rem}
-.dc-cta{
-  display:block;text-align:center;width:100%;padding:0.9rem;
-  background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--brown);
-  border-radius:100px;font-weight:700;font-size:0.9rem;text-decoration:none;
-  box-shadow:0 8px 24px rgba(200,134,26,0.4);border:none;cursor:pointer;font-family:inherit;
-}
-.subs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
-.sub-card{
-  background:white;border-radius:20px;padding:1.6rem 1.4rem;border:1.5px solid var(--border-cream);
-  box-shadow:0 4px 16px rgba(14,36,24,0.06);transition:all .3s;display:flex;flex-direction:column;
-}
-.sub-card:hover{transform:translateY(-6px);box-shadow:0 16px 36px rgba(14,36,24,0.15);border-color:rgba(200,134,26,0.35)}
-.sub-card.b2b{background:linear-gradient(160deg,var(--green-deep),var(--green-mid));border-color:rgba(200,134,26,0.3)}
-.sub-card.b2b .sub-title{color:white}
-.sub-card.b2b .sub-text{color:rgba(255,255,255,0.6)}
-.sub-icon{font-size:1.7rem;margin-bottom:0.7rem}
-.sub-title{font-weight:700;font-size:0.95rem;color:var(--green-deep);margin-bottom:0.4rem}
-.sub-text{font-size:0.78rem;color:var(--stone);line-height:1.6;margin-bottom:1rem;flex:1}
-.sub-tag{display:inline-block;font-size:0.62rem;font-weight:700;color:var(--gold-light);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.5rem}
-.sub-cta{
-  display:inline-flex;align-items:center;justify-content:center;gap:0.4rem;width:100%;
-  padding:0.65rem;border-radius:100px;background:var(--green-deep);color:white;
-  font-size:0.78rem;font-weight:700;text-decoration:none;border:none;cursor:pointer;font-family:inherit;transition:all .2s;
-}
-.sub-cta:hover{background:var(--gold);color:var(--brown)}
-.sub-card.b2b .sub-cta{background:var(--gold);color:var(--brown)}
-.subs-footer-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:1.2rem;margin-top:2.5rem}
-.payment-card,.loyalty-card{border-radius:18px;padding:1.6rem;border:1.5px solid var(--border-cream);background:white}
-.payment-card h4,.loyalty-card h4{font-family:'Cormorant Garamond',serif;color:var(--green-deep);font-size:1.15rem;margin-bottom:0.7rem}
-.pay-pills{display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.8rem}
-.pay-pill{padding:0.4rem 0.9rem;border-radius:100px;background:var(--cream-warm);font-size:0.75rem;font-weight:700;color:var(--green-deep);border:1px solid var(--border-cream)}
-.payment-card p,.loyalty-card p{font-size:0.78rem;color:var(--stone);line-height:1.8}
-.app-soon{margin-top:0.9rem;font-size:0.7rem;color:var(--gold);font-weight:700;display:flex;align-items:flex-start;gap:0.4rem;line-height:1.5}
-
-@media(max-width:900px){
-  .trust-bar{padding:1.6rem 1.5rem}
-  .trust-bar-grid{grid-template-columns:1fr 1fr;gap:1.2rem}
-  .d2c-section{padding:4rem 1.5rem}
-  .d2c-grid{grid-template-columns:1fr}
-  .subs-section{padding:4rem 1.5rem}
-  .daily-configurator{grid-template-columns:1fr;padding:1.8rem}
-  .subs-grid{grid-template-columns:1fr 1fr}
-  .subs-footer-grid{grid-template-columns:1fr}
-}
-@media(max-width:560px){
-  .subs-grid{grid-template-columns:1fr}
-}
-</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "HimDairy",
+  "description": "Farm-fresh Himalayan A2 cow milk, buffalo milk, curd, paneer, desi ghee and lassi delivered daily.",
+  "image": "https://himdairy.in/assets/og-image.jpg",
+  "telephone": "+919459755408",
+  "priceRange": "₹30–₹1200",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Himachal Pradesh",
+    "addressLocality": "Kangra",
+    "addressCountry": "IN"
+  }
+}
+</script>
 </head>
 <body>
 
-<!-- ═══ NAV ═══ -->
-<nav id="nav">
-  <a class="logo-wrap" href="#">
-    <div class="logo-mountain">🏔️</div>
-    <div>
-      <div class="logo-text">Him<span>Dairy</span></div>
-      <div class="logo-sub">Pure · Fresh · Himachali</div>
-    </div>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#shop">Shop</a></li>
-    <li><a href="#subscribe">Subscribe</a></li>
-    <li><a href="#facts">Nutrition</a></li>
-    <li><a href="#order">Order Now</a></li>
-    <li><a href="#story">Our Story</a></li>
-  </ul>
-  <div class="nav-right">
-    <a href="#shop" class="btn-nav" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'});return false;">🛒 Buy Now</a>
-    <div class="cart-btn" onclick="openCart()">🛒<span class="cart-badge" id="cartCount">0</span></div>
-  </div>
-</nav>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ═══ HERO ═══ -->
-<section class="hero" id="home">
-  <video class="hero-video" autoplay muted loop playsinline poster="assets/poster.jpg">
-    <source src="assets/hero.mp4" type="video/mp4">
-  </video>
-  <div class="hero-overlay"></div>
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand" aria-label="HimDairy home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none"><path d="M17 3C12 9 6 13.5 6 20.5A11 11 0 0 0 28 20.5C28 13.5 22 9 17 3Z" fill="#C89B3C"/><path d="M17 8.5C13.7 12.6 9.8 15.7 9.8 20.6a7.2 7.2 0 0 0 14.4 0c0-4.9-3.9-8-7.2-12.1Z" fill="#0F3D2E"/></svg>
+      </span>
+      <span class="brand-word">HimDairy</span>
+    </a>
 
-  <div class="hero-stars"></div>
-  <div class="hero-sun"></div>
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="#products">Products</a>
+      <a href="#order">Order</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-  <div class="hero-content">
-    <div class="hero-badge">
-      <span class="badge-dot"></span>
-      🏔️ Himachal Pradesh · 6,000–7,000 ft above sea level
-    </div>
-    <h1>Real Milk.<br><em>Real</em><br>Himalayas.</h1>
-    <div class="hero-tagline">Pahaadon ki taazgi, aapke ghar tak</div>
-    <p>Pasteurised A2 Desi Cow Milk — sourced directly from free-range Pahari cows grazing on untouched Himalayan meadows. No chemicals, no hormones. Pure as the mountains.</p>
-    <div class="hero-cta">
-      <a href="#shop" class="btn-primary" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'});return false;">Shop Fresh Products ↓</a>
-      <a href="#order" class="btn-ghost" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'});return false;">💬 Order on WhatsApp</a>
+    <div class="header-actions">
+      <a href="#order" class="btn btn-gold btn-small header-cta">Order Now</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
+</header>
 
-  <!-- Right stats -->
-  <div class="hero-float">
-    <div class="float-card">
-      <div class="float-card-num">6,500<small style="font-size:1rem">ft</small></div>
-      <div class="float-card-label">Average farm altitude</div>
-    </div>
-    <div class="float-card">
-      <div class="float-card-num">A2</div>
-      <div class="float-card-label">Desi Cow Milk — Beta Casein</div>
-    </div>
-    <div class="float-card">
-      <div class="float-card-num">48hr</div>
-      <div class="float-card-label">Farm to doorstep, chilled</div>
-    </div>
-    <div class="float-card">
-      <div class="float-card-num">0%</div>
-      <div class="float-card-label">Chemicals or preservatives</div>
-    </div>
-  </div>
+<main id="main">
 
-  <!-- A2 badge like packet -->
-  <div class="a2-badge">
-    <div class="a2-big">A2</div>
-    <div class="a2-small">DESI COW<br>MILK</div>
-  </div>
-
-  <!-- Mountain SVG range -->
-  <div class="hero-mountains">
-    <svg viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
-      <path d="M0,320 L0,200 L90,140 L180,175 L270,95 L360,145 L450,65 L540,125 L630,55 L720,120 L810,70 L900,135 L990,85 L1080,150 L1170,100 L1260,160 L1350,110 L1440,170 L1440,320Z" fill="rgba(255,255,255,0.03)"/>
-      <path d="M0,320 L0,240 L80,185 L170,215 L270,150 L370,195 L460,130 L550,180 L650,115 L740,170 L840,125 L940,185 L1040,140 L1140,200 L1240,155 L1340,205 L1440,170 L1440,320Z" fill="rgba(255,255,255,0.05)"/>
-      <path d="M0,320 L0,275 L70,230 L130,250 L220,185 L280,205 L380,165 L420,178 L510,210 L580,175 L640,185 L730,150 L770,162 L860,200 L940,168 L1000,180 L1100,215 L1180,185 L1270,225 L1360,200 L1440,235 L1440,320Z" fill="rgba(255,255,255,0.07)"/>
-      <!-- Snow caps -->
-      <path d="M220,185 L255,198 L280,205 L250,190Z" fill="rgba(255,255,255,0.55)"/>
-      <path d="M380,165 L405,174 L420,178 L398,168Z" fill="rgba(255,255,255,0.55)"/>
-      <path d="M580,175 L605,180 L640,185 L608,177Z" fill="rgba(255,255,255,0.55)"/>
-      <path d="M730,150 L752,158 L770,162 L750,153Z" fill="rgba(255,255,255,0.65)"/>
-      <path d="M450,130 L470,140 L480,145 L465,133Z" fill="rgba(255,255,255,0.5)"/>
-    </svg>
-  </div>
-
-  <!-- Milk wave at bottom -->
-  <div class="hero-milk">
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="hero-ridges" aria-hidden="true">
     <svg viewBox="0 0 1440 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,220 L0,100 Q60,60 120,90 Q180,120 240,80 Q300,40 360,70 Q420,100 480,65 Q540,30 600,60 Q660,90 720,55 Q780,20 840,50 Q900,80 960,45 Q1020,10 1080,40 Q1140,70 1200,45 Q1260,20 1320,50 L1440,30 L1440,220Z" fill="rgba(245,240,232,0.08)"/>
-      <path d="M0,220 L0,140 Q80,100 160,130 Q240,160 320,115 Q400,70 480,105 Q560,140 640,100 Q720,60 800,95 Q880,130 960,100 Q1040,70 1120,100 Q1200,130 1280,105 L1440,80 L1440,220Z" fill="rgba(245,240,232,0.12)"/>
-      <path d="M0,220 L0,180 Q120,150 240,170 Q360,190 480,158 Q600,126 720,155 Q840,184 960,160 Q1080,136 1200,160 Q1320,184 1440,165 L1440,220Z" fill="rgba(245,240,232,0.9)"/>
+      <path d="M0 220 L0 140 L120 90 L230 150 L340 60 L460 130 L560 40 L680 120 L800 55 L930 140 L1040 75 L1160 150 L1280 90 L1440 140 L1440 220 Z" fill="#0A2A1F"/>
+      <path d="M0 220 L0 175 L150 130 L280 175 L420 110 L570 170 L700 100 L860 165 L1000 120 L1150 175 L1300 130 L1440 175 L1440 220 Z" fill="#123B2B" opacity="0.85"/>
     </svg>
   </div>
-</section>
 
-<!-- ═══ TICKER STRIP ═══ -->
-<div class="origin-strip">
-  <div class="ticker-wrap" id="ticker">
-    <span class="ticker-item">🌿 Sourced from <strong>Kangra, Kullu & Shimla</strong></span>
-    <span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">❄️ Altitude <strong>6,000–7,000 ft</strong> Above Sea Level</span>
-    <span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">🐄 Free-Range <strong>Pahari Desi Cows</strong></span>
-    <span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">🌸 <strong>No Chemicals</strong>, No Preservatives</span>
-    <span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">🚚 Delivered in <strong>48 Hours</strong> — Chilled & Packed</span>
-    <span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">✅ <strong>Naturally Rich</strong> in A2 Protein</span>
-    <span class="ticker-item ticker-dot">✦</span>
-    <!-- Duplicate for infinite scroll -->
-    <span class="ticker-item">🌿 Sourced from <strong>Kangra, Kullu & Shimla</strong></span>
-    <span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">❄️ Altitude <strong>6,000–7,000 ft</strong> Above Sea Level</span>
-    <span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">🐄 Free-Range <strong>Pahari Desi Cows</strong></span>
-    <span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">🌸 <strong>No Chemicals</strong>, No Preservatives</span>
-    <span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">🚚 Delivered in <strong>48 Hours</strong> — Chilled & Packed</span>
-    <span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">✅ <strong>Naturally Rich</strong> in A2 Protein</span>
-    <span class="ticker-item ticker-dot">✦</span>
-  </div>
-</div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow eyebrow-light reveal">Farm to Doorstep · Kangra, Himachal Pradesh</p>
+    <h1 class="hero-title reveal">Fresh Himalayan<br>Dairy Products</h1>
+    <p class="hero-tagline reveal">Purity from the Himalayas.</p>
+    <p class="hero-sub reveal">Order fresh milk direct from farm — hand-milked at dawn, delivered to your door the same day. No middlemen, no preservatives, no compromise.</p>
 
-<!-- ═══ TRUST BAR ═══ -->
-<div class="trust-bar">
-  <div class="trust-bar-grid">
-    <div class="trust-item">
-      <div class="trust-icon">✔️</div>
-      <div><div class="trust-label">Quality Checked</div><div class="trust-sub">Every batch verified before dispatch</div></div>
+    <div class="hero-actions reveal">
+      <a href="#order" id="heroWhatsapp" class="btn btn-whatsapp btn-large">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm5.79 14.08c-.24.68-1.4 1.31-1.93 1.35-.5.05-1 .25-3.37-.7-2.85-1.14-4.68-4.05-4.82-4.24-.14-.19-1.15-1.53-1.15-2.92 0-1.39.73-2.07.99-2.35.26-.28.57-.35.76-.35h.55c.18 0 .41-.03.64.49.24.55.8 1.9.87 2.04.07.14.12.3.02.49-.09.19-.14.3-.28.46-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.6-.14.24.09 1.55.73 1.82.87.27.14.44.21.51.32.07.12.07.68-.17 1.36Z"/></svg>
+        Order on WhatsApp
+      </a>
+      <a href="#products" class="btn btn-outline-light btn-large">View Products</a>
     </div>
-    <div class="trust-item">
-      <div class="trust-icon">📍</div>
-      <div><div class="trust-label">100% Traceable</div><div class="trust-sub">Know your milk's exact farm & altitude</div></div>
-    </div>
-    <div class="trust-item">
-      <div class="trust-icon">🚫</div>
-      <div><div class="trust-label">No Adulteration</div><div class="trust-sub">Alcohol-test verified, zero water added</div></div>
-    </div>
-    <div class="trust-item">
-      <div class="trust-icon">🏔️</div>
-      <div><div class="trust-label">Himachali Farms Only</div><div class="trust-sub">Sourced direct from Kangra, Kullu & Shimla</div></div>
-    </div>
-  </div>
-</div>
 
-<!-- ═══ D2C BELIEF ═══ -->
-<section class="d2c-section">
-  <div class="d2c-inner">
-    <div class="section-eyebrow">Our Model</div>
-    <div class="section-title">We believe in Direct-to-Consumer</div>
-    <p class="d2c-sub">No middlemen, no retailer markup, no old stock sitting on shelves. Just fresh milk from Himachal's hills, straight to your door.</p>
-    <div class="d2c-grid">
-      <div class="d2c-point">
-        <span class="d2c-check">✓</span>
-        <div><div class="d2c-point-title">No Middlemen</div><div class="d2c-point-text">Farm to your door, directly — no distributors or retailers in between.</div></div>
-      </div>
-      <div class="d2c-point">
-        <span class="d2c-check">✓</span>
-        <div><div class="d2c-point-title">Farmer Gets a Fair Price</div><div class="d2c-point-text">Cutting out margins means our Himachali farmers earn more per litre.</div></div>
-      </div>
-      <div class="d2c-point">
-        <span class="d2c-check">✓</span>
-        <div><div class="d2c-point-title">Always a Fresh Batch</div><div class="d2c-point-text">No warehouse storage — milk reaches you within 48 hours of milking.</div></div>
-      </div>
-      <div class="d2c-point">
-        <span class="d2c-check">✓</span>
-        <div><div class="d2c-point-title">Fair, Honest Pricing</div><div class="d2c-point-text">You pay for milk, not for someone else's shelf space or ad budget.</div></div>
-      </div>
-      <div class="d2c-point">
-        <span class="d2c-check">✓</span>
-        <div><div class="d2c-point-title">Order Direct on WhatsApp</div><div class="d2c-point-text">Talk to us directly — no call centers, no app required to get started.</div></div>
-      </div>
-      <div class="d2c-point">
-        <span class="d2c-check">✓</span>
-        <div><div class="d2c-point-title">Full Traceability</div><div class="d2c-point-text">Every product is linked back to the exact farm it came from.</div></div>
-      </div>
-    </div>
+    <ul class="hero-badges reveal" aria-label="Highlights">
+      <li>100% A2 Desi Cow Milk</li>
+      <li>Zero Preservatives</li>
+      <li>Delivered Daily</li>
+    </ul>
   </div>
 </section>
 
-<!-- ═══ OUR PROMISE (cream section) ═══ -->
-<section class="promise-section" id="why">
-  <div style="text-align:center;margin-bottom:3.5rem">
-    <div class="section-eyebrow">Our Promise</div>
-    <div class="section-title" style="margin:0 auto">Nature does the work.<br>We just deliver it.</div>
-  </div>
-  <div class="promise-grid">
-    <!-- Packet visual recreation -->
-    <div class="packet-visual">
-      <div class="packet-sun"></div>
-      <div class="packet-logo-area">
-        <div style="font-size:0.7rem;letter-spacing:0.15em;color:rgba(255,255,255,0.45);text-transform:uppercase;margin-bottom:0.5rem">From the Lap of Himalayas</div>
-        <div class="packet-brand">Him<span>Dairy</span></div>
-        <div class="packet-tagline-small">Pure · Fresh · Himachali</div>
-      </div>
-      <div class="packet-italic">Pahaadon ki taazgi,<br>aapke ghar tak</div>
-      <div style="text-align:center;margin:0.5rem 0 1.2rem">
-        <span style="background:linear-gradient(135deg,#C8861A,#D9A441);color:white;font-size:0.7rem;font-weight:700;padding:0.3rem 0.9rem;border-radius:100px;letter-spacing:0.08em">PASTEURISED COW MILK · HOMOGENISED</span>
-      </div>
-      <div class="packet-icons-row">
-        <div class="pack-icon-item">
-          <div class="ico">🏔️</div>
-          <p>Sourced from HP 6,000–7,000 ft</p>
-        </div>
-        <div class="pack-icon-item">
-          <div class="ico">🌿</div>
-          <p>Naturally Rich in A2 Protein</p>
-        </div>
-        <div class="pack-icon-item">
-          <div class="ico">💧</div>
-          <p>No Added Preservatives</p>
-        </div>
-        <div class="pack-icon-item">
-          <div class="ico">❄️</div>
-          <p>Chilled & Hygienically Packed</p>
-        </div>
-      </div>
-      <div class="packet-footer-text">Real Milk. Real Himalayas.</div>
-    </div>
-
-    <!-- Promise points -->
-    <div class="promise-points">
-      <div class="promise-point">
-        <div class="pp-icon">🐄</div>
-        <div>
-          <div class="pp-title">Happy & Healthy Pahari Cows</div>
-          <div class="pp-text">Our cows graze freely on alpine meadows at 6,000+ ft, eating wild Himalayan herbs like Brahmi, Tulsi & Shatavari — resulting in naturally richer, more nutritious milk.</div>
-        </div>
-      </div>
-      <div class="promise-point">
-        <div class="pp-icon">🌿</div>
-        <div>
-          <div class="pp-title">Natural Feed — Zero Chemicals</div>
-          <div class="pp-text">No artificial hormones, no antibiotics, no adulteration. What the cow eats goes into your milk — and here it's only nature's best.</div>
-        </div>
-      </div>
-      <div class="promise-point">
-        <div class="pp-icon">💧</div>
-        <div>
-          <div class="pp-title">Glacial Spring Water</div>
-          <div class="pp-text">Our farms are fed by springs flowing down from the Himalayas — the cleanest water in India, free from industrial or agricultural pollution.</div>
-        </div>
-      </div>
-      <div class="promise-point">
-        <div class="pp-icon">❄️</div>
-        <div>
-          <div class="pp-title">Hygienic Milking & Cold Packing</div>
-          <div class="pp-text">Milk is processed within hours of milking and kept chilled throughout delivery — fresh at your door in 48 hours. No compromise on hygiene.</div>
-        </div>
-      </div>
-    </div>
+<!-- ================= TRUST STRIP ================= -->
+<section class="trust-strip" aria-label="Why choose HimDairy">
+  <div class="wrap trust-grid">
+    <div class="trust-item reveal"><span class="trust-icon" aria-hidden="true">🌿</span>Farm Fresh</div>
+    <div class="trust-item reveal"><span class="trust-icon" aria-hidden="true">💧</span>100% Pure</div>
+    <div class="trust-item reveal"><span class="trust-icon" aria-hidden="true">🚫</span>No Preservatives</div>
+    <div class="trust-item reveal"><span class="trust-icon" aria-hidden="true">🚴</span>Daily Delivery</div>
+    <div class="trust-item reveal"><span class="trust-icon" aria-hidden="true">🐄</span>Healthy Cows</div>
+    <div class="trust-item reveal"><span class="trust-icon" aria-hidden="true">🏅</span>Trusted Quality</div>
   </div>
 </section>
 
-<!-- ═══ PRODUCTS (dark green bg) ═══ -->
-<section class="products-section" id="shop">
-  <div class="products-header">
-    <div>
-      <div class="section-eyebrow">Fresh from the Hills</div>
-      <div class="section-title">Today's Harvest</div>
-    </div>
-    <div class="filter-row">
-      <button class="ftab active" onclick="setFilter(this,'all')">All Products</button>
-      <button class="ftab" onclick="setFilter(this,'organic')">Organic</button>
-      <button class="ftab" onclick="setFilter(this,'a2')">A2 Milk</button>
-      <button class="ftab" onclick="setFilter(this,'bestseller')">Bestsellers</button>
-    </div>
-  </div>
-  <div class="products-grid" id="prodGrid"></div>
-</section>
+<!-- ================= PRODUCTS ================= -->
+<section class="section" id="products">
+  <div class="wrap">
+    <p class="eyebrow reveal">Our Produce</p>
+    <h2 class="section-title reveal">Choose what you need today</h2>
+    <p class="section-sub reveal">Every item is priced honestly, made without shortcuts, and ready to add straight to your order.</p>
 
-<!-- ═══ SUBSCRIPTIONS ═══ -->
-<section class="subs-section" id="subscribe">
-  <div style="text-align:center;margin-bottom:1.2rem">
-    <div class="section-eyebrow">Subscribe & Never Run Out</div>
-    <div class="section-title" style="margin:0 auto">Plans for Every Home</div>
-  </div>
-  <div class="subs-note">
-    💬 <strong>No app needed to start.</strong> Just message <strong>"START"</strong> on WhatsApp and we'll activate your plan — your delivery list is prepared fresh every night for the next day.
-  </div>
-
-  <!-- Daily Milk Configurator -->
-  <div class="daily-configurator">
-    <div>
-      <div class="dc-title">Daily Milk <span>Subscription</span></div>
-      <p class="dc-sub">Fresh A2 milk delivered to your door, every day — no daily ordering, no missed days. Pause anytime by messaging us on WhatsApp.</p>
-      <div class="dc-fields">
-        <div class="dc-field">
-          <label>Quantity</label>
-          <select id="dcQty" onchange="updateDailyPrice()">
-            <option value="1">1 Litre</option>
-            <option value="0.5">500 ml</option>
-          </select>
-        </div>
-        <div class="dc-field">
-          <label>Milk Type</label>
-          <select id="dcType" onchange="updateDailyPrice()">
-            <option value="cow">A2 Cow Milk</option>
-            <option value="buffalo" disabled>Buffalo Milk (Coming Soon)</option>
-          </select>
-        </div>
-        <div class="dc-field">
-          <label>Frequency</label>
-          <select id="dcFreq" onchange="updateDailyPrice()">
-            <option value="daily">Daily</option>
-            <option value="alt">Alternate Days</option>
-          </select>
-        </div>
-        <div class="dc-field">
-          <label>Delivery Time</label>
-          <select id="dcTime" onchange="updateDailyPrice()">
-            <option value="Morning">Morning</option>
-            <option value="Evening">Evening</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <div class="dc-summary">
-      <div class="dc-price-label">Estimated Monthly</div>
-      <div class="dc-price-value" id="dcMonthlyPrice">₹2,850</div>
-      <div class="dc-price-detail" id="dcDeliveries">30 deliveries/month · Billed in advance</div>
-      <a href="#" id="dcWaBtn" target="_blank" class="dc-cta">💬 Start via WhatsApp</a>
-    </div>
-  </div>
-
-  <!-- Other Plans -->
-  <div class="subs-grid">
-    <div class="sub-card">
-      <div class="sub-icon">📦</div>
-      <div class="sub-title">Weekly Dairy Box</div>
-      <div class="sub-text">Milk, curd &amp; paneer delivered together every week — no separate ordering each time. Custom box, custom price.</div>
-      <button class="sub-cta" onclick="startSubscription('Weekly Dairy Box','Milk + Curd + Paneer — weekly delivery')">💬 Build My Box</button>
-    </div>
-    <div class="sub-card">
-      <div class="sub-icon">👨‍👩‍👧‍👦</div>
-      <div class="sub-title">Monthly Family Plan</div>
-      <div class="sub-text">Daily 1L milk + 2kg curd + 1kg paneer + 1kg ghee every month. Approx. ₹4,750/month for this combo — customisable.</div>
-      <button class="sub-cta" onclick="startSubscription('Monthly Family Plan','Daily 1L Milk + 2kg Curd + 1kg Paneer + 1kg Ghee per month')">💬 Get This Plan</button>
-    </div>
-    <div class="sub-card">
-      <div class="sub-icon">🧒</div>
-      <div class="sub-title">Kids Nutrition Plan</div>
-      <div class="sub-text">Growing with HimDairy — daily 500ml milk, weekly curd &amp; monthly ghee, sized for young appetites. From approx. ₹2,000/month.</div>
-      <button class="sub-cta" onclick="startSubscription('Kids Nutrition Plan','500ml Milk daily + Curd weekly + Ghee monthly')">💬 Get This Plan</button>
-    </div>
-    <div class="sub-card">
-      <div class="sub-icon">🧓</div>
-      <div class="sub-title">Senior Citizen Plan</div>
-      <div class="sub-text">Same trusted daily milk, plus easy doorstep delivery and a friendly reminder call. Low-fat option coming soon.</div>
-      <button class="sub-cta" onclick="startSubscription('Senior Citizen Plan','Daily milk with doorstep delivery + reminder calls')">💬 Get This Plan</button>
-    </div>
-    <div class="sub-card">
-      <div class="sub-icon">🪔</div>
-      <div class="sub-title">Festival Subscription</div>
-      <div class="sub-text">Ghee, paneer &amp; curd bundles for every festival, with priority delivery for our subscribers.</div>
-      <button class="sub-cta" onclick="startSubscription('Festival Subscription','Ghee + Paneer + Curd festival bundle, priority delivery')">💬 Enquire Now</button>
-    </div>
-    <div class="sub-card b2b">
-      <div class="sub-icon">🏢</div>
-      <div class="sub-tag">B2B</div>
-      <div class="sub-title">Office &amp; Café Supply</div>
-      <div class="sub-text">Daily bulk supply for offices, cafés, restaurants &amp; schools — recurring orders with custom bulk pricing.</div>
-      <button class="sub-cta" onclick="startSubscription('Office / Bulk Supply','Recurring B2B supply — please share quantity needed')">💬 Get Bulk Pricing</button>
-    </div>
-  </div>
-
-  <!-- Payment + Loyalty -->
-  <div class="subs-footer-grid">
-    <div class="payment-card">
-      <h4>Flexible Payment Cycles</h4>
-      <div class="pay-pills">
-        <span class="pay-pill">Monthly</span>
-        <span class="pay-pill">Quarterly</span>
-        <span class="pay-pill">Half-Yearly</span>
-        <span class="pay-pill">Yearly</span>
-      </div>
-      <p>Choose your billing cycle — all subscriptions are billed in advance, which helps us keep your milk price locked in.</p>
-      <div class="app-soon">📱 App coming soon: pause delivery for vacations, add extra milk, change quantity &amp; pay online instantly.</div>
-    </div>
-    <div class="loyalty-card">
-      <h4>Loyalty Rewards</h4>
-      <p>🎁 Complete 12 months → get 1 week of milk free<br>
-      🎂 A little treat on your birthday<br>
-      🪔 Festival coupons for active subscribers</p>
-    </div>
+    <div class="product-grid" id="productGrid"><!-- rendered by script.js --></div>
   </div>
 </section>
 
-<!-- ═══ NUTRITION + DID YOU KNOW (cream) ═══ -->
-<section class="facts-section" id="facts">
-  <div style="text-align:center;margin-bottom:3rem;position:relative;z-index:1">
-    <div class="section-eyebrow">Transparency First</div>
-    <div class="section-title">What's Inside Your Milk?</div>
-  </div>
-  <div class="facts-grid">
-    <!-- Nutrition card -->
-    <div>
-      <div class="nutrition-card">
-        <div class="nc-header">
-          <span style="font-size:2rem">🧬</span>
-          <div>
-            <div class="nc-title">Nutrition Facts</div>
-            <div class="nc-sub">Approx. per 100 ml · A2 Pahari Cow Milk</div>
+<!-- ================= ORDER ================= -->
+<section class="section section-alt" id="order">
+  <div class="wrap">
+    <p class="eyebrow reveal">Place Your Order</p>
+    <h2 class="section-title reveal">A few details, then it's on its way</h2>
+    <p class="section-sub reveal">Fill in your details below. Your order is sent straight to our WhatsApp — we'll confirm within minutes.</p>
+
+    <div class="order-layout">
+      <form class="order-form reveal" id="orderForm" novalidate>
+        <h3 class="form-heading">Customer Details</h3>
+
+        <div class="field">
+          <label for="custName">Name</label>
+          <input type="text" id="custName" name="custName" placeholder="Your full name" autocomplete="name" required>
+          <span class="field-error" id="err-custName" role="alert"></span>
+        </div>
+
+        <div class="field">
+          <label for="custPhone">Phone Number</label>
+          <input type="tel" id="custPhone" name="custPhone" placeholder="98765 43210" inputmode="numeric" autocomplete="tel" required>
+          <span class="field-error" id="err-custPhone" role="alert"></span>
+        </div>
+
+        <div class="field">
+          <label for="custAddress">Complete Address</label>
+          <textarea id="custAddress" name="custAddress" rows="3" placeholder="House no., street, village/town, PIN code" autocomplete="street-address" required></textarea>
+          <span class="field-error" id="err-custAddress" role="alert"></span>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="deliveryDate">Delivery Date</label>
+            <input type="date" id="deliveryDate" name="deliveryDate" required>
+            <span class="field-error" id="err-deliveryDate" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="deliveryTime">Delivery Time</label>
+            <select id="deliveryTime" name="deliveryTime" required>
+              <option value="" disabled selected>Select a slot</option>
+              <option value="6:00 AM – 8:00 AM">6:00 AM – 8:00 AM</option>
+              <option value="8:00 AM – 10:00 AM">8:00 AM – 10:00 AM</option>
+              <option value="5:00 PM – 7:00 PM">5:00 PM – 7:00 PM</option>
+              <option value="7:00 PM – 9:00 PM">7:00 PM – 9:00 PM</option>
+            </select>
+            <span class="field-error" id="err-deliveryTime" role="alert"></span>
           </div>
         </div>
-        <div class="nutrition-row">
-          <span class="nr-label">Energy</span><span class="nr-value">66 kcal</span>
-        </div>
-        <div class="nutrition-row">
-          <span class="nr-label">Protein</span><span class="nr-value">3.2 g</span>
-        </div>
-        <div class="nutrition-row">
-          <span class="nr-label">Fat</span><span class="nr-value">4.0 g</span>
-        </div>
-        <div class="nutrition-row">
-          <span class="nr-label">Carbohydrate</span><span class="nr-value">4.8 g</span>
-        </div>
-        <div class="nutrition-row">
-          <span class="nr-label">Calcium</span><span class="nr-value">120 mg</span>
-        </div>
-        <div class="nutrition-row">
-          <span class="nr-label">A2 Beta-Casein Protein</span><span class="nr-value">✅ Present</span>
-        </div>
-        <div class="nc-footer">❄️ Keep refrigerated at 4°C or below · Consume fresh</div>
-      </div>
-      <div style="margin-top:1.5rem;background:var(--green-deep);border-radius:20px;padding:1.5rem;position:relative;z-index:1">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold-light);font-weight:700;margin-bottom:0.8rem">Why Choose HimDairy?</div>
-        <div style="display:flex;flex-direction:column;gap:0.5rem">
-          <div style="font-size:0.83rem;color:rgba(255,255,255,0.7);display:flex;gap:0.5rem"><span style="color:var(--gold-light)">✓</span> 100% Pure & Natural</div>
-          <div style="font-size:0.83rem;color:rgba(255,255,255,0.7);display:flex;gap:0.5rem"><span style="color:var(--gold-light)">✓</span> No Hormones or Antibiotics</div>
-          <div style="font-size:0.83rem;color:rgba(255,255,255,0.7);display:flex;gap:0.5rem"><span style="color:var(--gold-light)">✓</span> No Adulteration — Ever</div>
-          <div style="font-size:0.83rem;color:rgba(255,255,255,0.7);display:flex;gap:0.5rem"><span style="color:var(--gold-light)">✓</span> Direct from Himachal to Your Home</div>
-        </div>
-        <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.1);font-size:0.72rem;color:rgba(255,255,255,0.4);font-style:italic;font-family:'Cormorant Garamond',serif">
-          "Himachal Ki Shaan, Aapke Parivaar Ki Pehchaan."
-        </div>
-      </div>
-    </div>
+      </form>
 
-    <!-- Did You Know -->
-    <div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--green-deep);margin-bottom:1.5rem;position:relative;z-index:1">Did You Know? 🏔️</div>
-      <div class="did-you-know">
-        <div class="dyk-card">
-          <div class="dyk-icon">🗻</div>
-          <div>
-            <div class="dyk-title">Himachal Pradesh — Land of Purity</div>
-            <div class="dyk-text">Over 90% of Himachal is covered with mountains — one of the most naturally blessed and pollution-free states of India.</div>
-          </div>
+      <aside class="order-summary reveal" id="orderSummary" aria-labelledby="summaryHeading">
+        <h3 class="form-heading" id="summaryHeading">Order Summary</h3>
+        <ul class="summary-list" id="summaryList">
+          <li class="summary-empty" id="summaryEmpty">No products selected yet — add items above.</li>
+        </ul>
+        <div class="summary-total">
+          <span>Estimated Total</span>
+          <strong id="summaryTotal">₹0</strong>
         </div>
-        <div class="dyk-card">
-          <div class="dyk-icon">💨</div>
-          <div>
-            <div class="dyk-title">Clean Air Capital of India</div>
-            <div class="dyk-text">Himachal has some of the cleanest air in India. Clean air means healthy cows, and healthy cows mean pure, premium milk.</div>
-          </div>
-        </div>
-        <div class="dyk-card">
-          <div class="dyk-icon">💧</div>
-          <div>
-            <div class="dyk-title">Water from the Himalayas</div>
-            <div class="dyk-text">Our cows drink from natural springs and glaciers flowing down the mighty Himalayas — the freshest water source on Earth.</div>
-          </div>
-        </div>
-        <div class="dyk-card">
-          <div class="dyk-icon">🌾</div>
-          <div>
-            <div class="dyk-title">Happy Cows, Better Milk</div>
-            <div class="dyk-text">Our Pahari cows graze on green meadows eating natural herbs like Brahmi, Tulsi & Shatavari — giving the milk its natural richness.</div>
-          </div>
-        </div>
+        <button type="button" class="btn btn-whatsapp btn-large btn-block" id="whatsappSubmit">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm5.79 14.08c-.24.68-1.4 1.31-1.93 1.35-.5.05-1 .25-3.37-.7-2.85-1.14-4.68-4.05-4.82-4.24-.14-.19-1.15-1.53-1.15-2.92 0-1.39.73-2.07.99-2.35.26-.28.57-.35.76-.35h.55c.18 0 .41-.03.64.49.24.55.8 1.9.87 2.04.07.14.12.3.02.49-.09.19-.14.3-.28.46-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.6-.14.24.09 1.55.73 1.82.87.27.14.44.21.51.32.07.12.07.68-.17 1.36Z"/></svg>
+          Send Order on WhatsApp
+        </button>
+        <p class="summary-note">Tapping this opens WhatsApp with your order pre-filled. Nothing is charged — we confirm availability and payment with you directly.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY HIMDAIRY ================= -->
+<section class="section" id="why">
+  <div class="wrap">
+    <p class="eyebrow reveal">Why HimDairy</p>
+    <h2 class="section-title reveal">The short version: nothing hidden, nothing added</h2>
+
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <span class="why-icon" aria-hidden="true">🌿</span>
+        <h3>Farm Fresh</h3>
+        <p>Milked each morning at our own Kangra farm and delivered the same day — never sitting in a warehouse.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon" aria-hidden="true">💧</span>
+        <h3>100% Pure</h3>
+        <p>Nothing added, nothing removed. What leaves the cow is what reaches your kitchen.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon" aria-hidden="true">🚫</span>
+        <h3>No Preservatives</h3>
+        <p>No chemicals, no synthetic milk, no shortcuts — just the way dairy used to be made.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon" aria-hidden="true">🚴</span>
+        <h3>Daily Delivery</h3>
+        <p>A dependable delivery window, every single day, so you never have to plan around us.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon" aria-hidden="true">🐄</span>
+        <h3>Healthy Cows</h3>
+        <p>Free-grazing, grass-fed desi cows raised with care — happy cows make honest milk.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon" aria-hidden="true">🏅</span>
+        <h3>Trusted Quality</h3>
+        <p>Every batch is checked for purity before it leaves the farm — consistency you can taste.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ ORDER NOW (dark green) ═══ -->
-<section class="order-section" id="order">
-  <div class="order-top">
-    <div class="section-eyebrow">Seedha Pahaadon Se Ghar Tak</div>
-    <div class="section-title" style="max-width:600px;margin:0 auto 0.8rem">Order Karo,<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold-light)">Ghar Mangao 🏔️</em></div>
-    <p class="order-sub">WhatsApp pe message karo aur 48 ghante mein fresh Himachali dairy aapke ghar. Simple, fast, guaranteed fresh.</p>
-    <a href="https://wa.me/919459755408?text=Namaste%20HimDairy!%20Main%20order%20karna%20chahta%20hoon.%20Kripya%20product%20list%20bhejein." target="_blank" class="btn-wa-big">💬 WhatsApp pe Order Karo</a>
+<!-- ================= REVIEWS ================= -->
+<section class="section section-alt" id="reviews">
+  <div class="wrap">
+    <p class="eyebrow reveal">Customer Reviews</p>
+    <h2 class="section-title reveal">What our neighbours are saying</h2>
+
+    <div class="review-grid">
+      <figure class="review-card reveal">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <blockquote>The milk actually tastes like milk from my grandmother's village. My kids won't drink anything else now.</blockquote>
+        <figcaption><span class="avatar">RS</span><span><strong>Rekha Sharma</strong><br>Dharamshala</span></figcaption>
+      </figure>
+      <figure class="review-card reveal">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <blockquote>Ordering on WhatsApp takes me thirty seconds. Delivery has never once been late in four months.</blockquote>
+        <figcaption><span class="avatar">VK</span><span><strong>Vikram Katoch</strong><br>Kangra</span></figcaption>
+      </figure>
+      <figure class="review-card reveal">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <blockquote>The desi ghee has that real golden aroma you just don't get from packaged brands. Worth every rupee.</blockquote>
+        <figcaption><span class="avatar">AT</span><span><strong>Anjali Thakur</strong><br>Palampur</span></figcaption>
+      </figure>
+    </div>
   </div>
+</section>
 
-  <div class="order-product-grid" id="orderProductGrid"></div>
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq">
+  <div class="wrap wrap-narrow">
+    <p class="eyebrow reveal">FAQ</p>
+    <h2 class="section-title reveal">Common questions</h2>
 
-  <div class="order-perks">
-    <div class="operk">
-      <div class="operk-icon">🚚</div>
-      <div>
-        <div class="operk-num">48 Hrs</div>
-        <div class="operk-label">Farm to ghar delivery</div>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item reveal">
+        <h3><button class="faq-q" aria-expanded="false">Which areas do you deliver to?<span class="faq-icon" aria-hidden="true">+</span></button></h3>
+        <div class="faq-a"><p>We currently deliver across Kangra district, including Dharamshala, Palampur and surrounding villages. Message us your PIN code on WhatsApp to confirm.</p></div>
       </div>
-    </div>
-    <div class="operk">
-      <div class="operk-icon">❄️</div>
-      <div>
-        <div class="operk-num">Cold</div>
-        <div class="operk-label">Chilled packing, har order</div>
+      <div class="faq-item reveal">
+        <h3><button class="faq-q" aria-expanded="false">Can I set up a daily or weekly subscription?<span class="faq-icon" aria-hidden="true">+</span></button></h3>
+        <div class="faq-a"><p>Yes — tell us your preferred products and schedule in your first WhatsApp order, and we'll set up recurring delivery for you.</p></div>
       </div>
-    </div>
-    <div class="operk">
-      <div class="operk-icon">💬</div>
-      <div>
-        <div class="operk-num">Hindi</div>
-        <div class="operk-label">WhatsApp mein order karo</div>
+      <div class="faq-item reveal">
+        <h3><button class="faq-q" aria-expanded="false">How is payment collected?<span class="faq-icon" aria-hidden="true">+</span></button></h3>
+        <div class="faq-a"><p>Cash on delivery and UPI are both accepted. We'll confirm the preferred method when we confirm your order on WhatsApp.</p></div>
       </div>
-    </div>
-    <div class="operk">
-      <div class="operk-icon">✅</div>
-      <div>
-        <div class="operk-num">100%</div>
-        <div class="operk-label">Fresh guarantee ya full refund</div>
+      <div class="faq-item reveal">
+        <h3><button class="faq-q" aria-expanded="false">How fresh is the milk when it arrives?<span class="faq-icon" aria-hidden="true">+</span></button></h3>
+        <div class="faq-a"><p>Milk is drawn each morning and delivered the same day — typically within a few hours of milking.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <h3><button class="faq-q" aria-expanded="false">Is there a minimum order quantity?<span class="faq-icon" aria-hidden="true">+</span></button></h3>
+        <div class="faq-a"><p>No minimum — order a single litre of milk or a full weekly basket, whatever suits your home.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <h3><button class="faq-q" aria-expanded="false">Can I cancel or reschedule a delivery?<span class="faq-icon" aria-hidden="true">+</span></button></h3>
+        <div class="faq-a"><p>Absolutely — just message us on WhatsApp at least a few hours before your delivery slot.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ STORY (cream) ═══ -->
-<section class="story-section" id="story">
-  <div>
-    <div class="section-eyebrow">Our Story</div>
-    <div class="section-title">Born in the mountains,<br>made for your table</div>
-    <p class="story-p">HimDairy started in 2023 when a group of Himachali farmers realized the world was paying premium prices for "organic" dairy — but not a rupee was reaching the actual mountains where it came from.</p>
-    <p class="story-p">We built a direct bridge. No middlemen. No cold storage chains that kill freshness. Just farmers, their cows, and your doorstep.</p>
-    <div class="story-quote">"Hamari gaay ghaans khati hai, chemicals nahi. Yahi farak hai."<br><small style="font-size:0.85rem;color:var(--stone)">— Ramesh Negi, Farmer, Kullu · 5,800 ft</small></div>
-    <p class="story-p">Every product carries the name and altitude of the farm it came from. Because transparency is not a marketing word for us — it's a promise.</p>
-  </div>
-  <div class="story-cards">
-    <div class="story-card">
-      <div class="story-card-icon">🐄</div>
-      <div class="story-card-num">340+</div>
-      <div class="story-card-label">Himachali farms</div>
-    </div>
-    <div class="story-card">
-      <div class="story-card-icon">🏔️</div>
-      <div class="story-card-num">6,500ft</div>
-      <div class="story-card-label">Average altitude</div>
-    </div>
-    <div class="story-card">
-      <div class="story-card-icon">👨‍👩‍👧‍👦</div>
-      <div class="story-card-num">12,000+</div>
-      <div class="story-card-label">Happy families served</div>
-    </div>
-    <div class="story-card">
-      <div class="story-card-icon">🌿</div>
-      <div class="story-card-num">100%</div>
-      <div class="story-card-label">Certified natural</div>
-    </div>
-    <div class="story-card full">
-      <div class="story-card-icon">📦</div>
-      <div class="story-card-num">48 hours</div>
-      <div class="story-card-label">From farm milking to your door — always fresh, always chilled</div>
+<!-- ================= CONTACT ================= -->
+<section class="section section-alt" id="contact">
+  <div class="wrap">
+    <p class="eyebrow reveal">Contact</p>
+    <h2 class="section-title reveal">Get in touch</h2>
+
+    <div class="contact-layout">
+      <ul class="contact-list reveal">
+        <li>
+          <span class="contact-icon" aria-hidden="true">📞</span>
+          <div><strong>Phone</strong><a href="tel:+919459755408">+91 94597 55408</a></div>
+        </li>
+        <li>
+          <span class="contact-icon" aria-hidden="true">💬</span>
+          <div><strong>WhatsApp</strong><a href="https://wa.me/919459755408" target="_blank" rel="noopener">Chat with us</a></div>
+        </li>
+        <li>
+          <span class="contact-icon" aria-hidden="true">✉️</span>
+          <div><strong>Email</strong><a href="mailto:hello@himdairy.in">hello@himdairy.in</a></div>
+        </li>
+        <li>
+          <span class="contact-icon" aria-hidden="true">📍</span>
+          <div><strong>Farm</strong><span>Kangra District, Himachal Pradesh</span></div>
+        </li>
+      </ul>
+
+      <div class="map-frame reveal">
+        <iframe
+          title="HimDairy farm location on Google Maps"
+          src="https://www.google.com/maps?q=Kangra,Himachal+Pradesh&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ TESTIMONIALS (dark) ═══ -->
-<section class="testimonials" id="reviews">
-  <div style="text-align:center;margin-bottom:2.5rem">
-    <div class="section-eyebrow">Real People, Real Experience</div>
-    <div class="section-title">What our community says</div>
-  </div>
-  <div class="testimonials-grid">
-    <div class="tcard">
-      <div class="t-stars">★★★★★</div>
-      <p class="tcard-text">Maine pehli baar asli Himachali ghee taste ki. Jo ghee supermarket mein milti thi — yeh bilkul alag hai. Rang, khushboo, sab kuch original. Ab sirf HimDairy se leti hoon.</p>
-      <div class="tcard-author"><div class="avatar">👩</div><div><div class="author-name">Priya Mehta <span class="verified">✓ Verified</span></div><div class="author-loc">Delhi · Buyer since 2024</div></div></div>
-    </div>
-    <div class="tcard">
-      <div class="t-stars">★★★★★</div>
-      <p class="tcard-text">Kullu mein mera farm hai. Pehle local mandi mein ₹40/litre milta tha. Ab seedha customer tak doodh pahunchata hoon. HimDairy ne sach mein fark kiya hai.</p>
-      <div class="tcard-author"><div class="avatar">👨‍🌾</div><div><div class="author-name">Mohan Singh Negi <span class="verified">✓ Verified</span></div><div class="author-loc">Kullu · Farm at 5,800ft</div></div></div>
-    </div>
-    <div class="tcard">
-      <div class="t-stars">★★★★★</div>
-      <p class="tcard-text">My 4-year-old had issues with regular milk. Switched to HimDairy's A2 Pahari milk — no issues at all now. The doctor was surprised. The quality difference is genuinely real.</p>
-      <div class="tcard-author"><div class="avatar">👩‍👦</div><div><div class="author-name">Anjali Sharma <span class="verified">✓ Verified</span></div><div class="author-loc">Chandigarh · Buyer</div></div></div>
-    </div>
-  </div>
-</section>
+</main>
 
-<!-- ═══ NEWSLETTER ═══ -->
-<div class="newsletter">
-  <div class="section-eyebrow" style="position:relative;z-index:1">Stay Connected</div>
-  <div class="section-title" style="position:relative;z-index:1;margin:0 auto 0.8rem">Fresh from the hills,<br>straight to your inbox</div>
-  <p class="nl-sub">Seasonal specials, new farm listings, and Himachali dairy stories every week.</p>
-  <div class="nl-form">
-    <input class="nl-input" type="email" placeholder="aapka@email.com" id="nlEmail">
-    <button class="btn-primary" onclick="handleNL()">Subscribe 🏔️</button>
-  </div>
-</div>
-
-<!-- ═══ FOOTER ═══ -->
-<footer>
-  <div class="footer-grid">
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
     <div class="footer-brand">
-      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem">
-        <span style="font-size:1.4rem">🏔️</span>
-        <span style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:white">Him<span style="color:var(--gold-light)">Dairy</span></span>
+      <span class="brand-word footer-word">HimDairy</span>
+      <p>Purity from the Himalayas.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="HimDairy on Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47a4.9 4.9 0 0 1 1.77 1.15c.5.5.87 1.1 1.15 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.42.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.42.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.3 2 12 2Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm5.2-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0Z"/></svg></a>
+        <a href="#" aria-label="HimDairy on Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8.4h2.8l.4-3.3h-3.2V8.1c0-.96.27-1.6 1.65-1.6h1.75V3.5C16.6 3.4 15.6 3.3 14.4 3.3c-2.6 0-4.4 1.6-4.4 4.5v2.5H7.2v3.3h2.8V22h3.5Z"/></svg></a>
+        <a href="#" aria-label="HimDairy on YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12s0-3.2-.4-4.7a2.8 2.8 0 0 0-2-2C17.9 5 12 5 12 5s-5.9 0-7.6.3a2.8 2.8 0 0 0-2 2C2 8.8 2 12 2 12s0 3.2.4 4.7c.24 1 1 1.76 2 2C6.1 19 12 19 12 19s5.9 0 7.6-.3a2.8 2.8 0 0 0 2-2c.4-1.5.4-4.7.4-4.7ZM10 15V9l5.2 3-5.2 3Z"/></svg></a>
       </div>
-      <div style="font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-light);margin-bottom:0.6rem">Pure · Fresh · Himachali</div>
-      <p>Pure Himalayan dairy — from the grasslands of Himachal Pradesh to your family's table. Natural, honest, traceable.</p>
-      <div style="margin-top:1rem;font-size:0.78rem;color:var(--gold-light);font-style:italic;font-family:'Cormorant Garamond',serif">"Pahaadon ki taazgi, aapke ghar tak"</div>
-      <div style="margin-top:0.8rem;padding:0.7rem 1rem;border:1px solid rgba(200,134,26,0.25);border-radius:12px;background:rgba(255,255,255,0.04)">✨ <strong style="color:white">A Product Initiative by AAVYA</strong><br><span style="font-size:0.8rem">For a Purer Tomorrow</span></div>
     </div>
-    <div class="footer-col">
-      <h4>Shop</h4>
-      <ul>
-        <li><a href="#">A2 Pahari Milk</a></li>
-        <li><a href="#">Himalayan Ghee</a></li>
-        <li><a href="#">Pahari Paneer</a></li>
-        <li><a href="#">Wild Herb Butter</a></li>
-        <li><a href="#">Pahari Dahi</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Order Info</h4>
-      <ul>
-        <li><a href="https://wa.me/919459755408" target="_blank">WhatsApp Order</a></li>
-        <li><a href="#shop">All Products</a></li>
-        <li><a href="#">Delivery Areas</a></li>
-        <li><a href="#">Return Policy</a></li>
-        <li><a href="#">FAQs</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contact Us</h4>
-      <ul>
-        <li><a href="tel:+919459755408">📞 +91 94597 55408</a></li>
-        <li><a href="mailto:ajchoudhary1994@gmail.com">✉️ ajchoudhary1994@gmail.com</a></li>
-        <li><a href="https://wa.me/919459755408" target="_blank">💬 WhatsApp Orders</a></li>
-        <li><a href="#">📍 Himachal Pradesh, India</a></li>
-      </ul>
+
+    <nav class="footer-nav" aria-label="Footer">
+      <h4>Explore</h4>
+      <a href="#products">Products</a>
+      <a href="#order">Order</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <nav class="footer-nav" aria-label="Legal">
+      <h4>Legal</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+
+    <div class="footer-contact">
+      <h4>Reach us</h4>
+      <a href="tel:+919459755408">+91 94597 55408</a>
+      <a href="mailto:hello@himdairy.in">hello@himdairy.in</a>
+      <span>Kangra, Himachal Pradesh</span>
     </div>
   </div>
-  <div class="footer-bottom">
-    <span>© 2026 HimDairy. Made with 🏔️ in Himachal Pradesh, India.</span>
-    <span class="footer-tagline">"Real Milk. Real Himalayas."</span>
+
+  <div class="wrap footer-bottom">
+    <p>© <span id="year"></span> HimDairy. All rights reserved.</p>
   </div>
 </footer>
 
-<!-- ═══ CART DRAWER ═══ -->
-<div class="overlay" id="overlay" onclick="closeCart()"></div>
-<div class="cart-drawer" id="cartDrawer">
-  <div class="cart-head">
-    <h3>🛒 Aapka Cart</h3>
-    <button class="close-x" onclick="closeCart()">✕</button>
+<!-- ================= MOBILE STICKY ORDER BAR ================= -->
+<div class="mobile-cart-bar" id="mobileCartBar" aria-hidden="true">
+  <div class="mobile-cart-info">
+    <span id="mobileCartCount">0 items</span>
+    <strong id="mobileCartTotal">₹0</strong>
   </div>
-  <div class="cart-body" id="cartBody">
-    <div class="cart-empty">Cart khaali hai.<br>Kuch fresh products add karein! 🏔️</div>
-  </div>
-  <div class="cart-foot" id="cartFoot" style="display:none">
-    <div class="cart-total-row"><span>Total</span><span id="cartTotal">₹0</span></div>
-    <button class="btn-checkout" onclick="showToast('Checkout jald aa raha hai! 🎉')">Checkout →</button>
-  </div>
+  <a href="#order" class="btn btn-gold btn-small">View Order</a>
 </div>
 
-<!-- ═══ TOAST ═══ -->
-<div class="toast" id="toast"></div>
-
-<!-- ═══ WHATSAPP FAB ═══ -->
-<a href="https://wa.me/919459755408?text=Namaste%20HimDairy,%20I%20want%20to%20know%20more%20about%20your%20products."
-   target="_blank"
-   style="position:fixed;bottom:25px;right:25px;width:62px;height:62px;background:#25D366;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,0.25);z-index:9999;transition:transform .2s"
-   onmouseover="this.style.transform='scale(1.1)'"
-   onmouseout="this.style.transform='scale(1)'">
-💬
-</a>
-
-<!-- ═══ CONTACT FAB + MODAL ═══ -->
-<button class="contact-fab" onclick="document.getElementById('contactModal').style.display='flex'">📞 Contact Us</button>
-
-<div class="contact-modal" id="contactModal" onclick="this.style.display='none'">
-  <div class="contact-card" onclick="event.stopPropagation()">
-    <h3>🏔️ HimDairy Contact</h3>
-    <p>Pahaadon ki taazgi, aapke ghar tak</p>
-    <a href="tel:+919459755408">📞 +91 94597 55408</a>
-    <a href="mailto:ajchoudhary1994@gmail.com">✉️ ajchoudhary1994@gmail.com</a>
-    <a href="https://wa.me/919459755408" target="_blank">💬 Chat on WhatsApp</a>
-    <button onclick="document.getElementById('contactModal').style.display='none'"
-            style="margin-top:1.2rem;width:100%;background:linear-gradient(135deg,#C8861A,#D9A441);border:none;padding:12px;border-radius:12px;font-weight:700;font-family:inherit;cursor:pointer;color:#2C1A0E;font-size:0.9rem">
-      Close
-    </button>
-  </div>
-</div>
-
-<!-- ═══ QUALITY & TRACEABILITY MODAL ═══ -->
-<div class="quality-modal" id="qualityModal" onclick="if(event.target===this)closeQuality()">
-  <div class="quality-card">
-    <h3 id="qmName">Product</h3>
-    <div class="q-origin" id="qmOrigin">📍 Farm</div>
-
-    <div class="q-check-row">
-      <span class="q-check-icon">✓</span>
-      <div><div class="q-check-title">Alcohol Test — Adulteration Check</div><div class="q-check-text">Every batch checked to confirm zero water or chemical adulteration before packing.</div></div>
-    </div>
-    <div class="q-check-row">
-      <span class="q-check-icon">✓</span>
-      <div><div class="q-check-title">Fat &amp; SNF Check (Lactometer)</div><div class="q-check-text">Fat and solids-not-fat verified to confirm milk richness and quality.</div></div>
-    </div>
-    <div class="q-check-row">
-      <span class="q-check-icon">✓</span>
-      <div><div class="q-check-title">Cold Chain Maintained</div><div class="q-check-text">Chilled within hours of milking and kept cold all the way to your door.</div></div>
-    </div>
-    <div class="q-check-row">
-      <span class="q-check-icon">✓</span>
-      <div><div class="q-check-title">FSSAI Registration</div><div class="q-check-text">Lic. No. — <em>add your FSSAI number here once registered</em></div></div>
-    </div>
-
-    <div class="q-qr-wrap">
-      <img id="qmQR" src="" width="130" height="130" alt="Scan for traceability info">
-      <p>Scan this code (printed on the pack) to see this same info</p>
-    </div>
-    <button class="q-close-btn" onclick="closeQuality()">Close</button>
-  </div>
-</div>
-
-<script>
-// ── PRODUCTS DATA ──
-const products = [
-  { id:1, name:'A2 Pahari Milk', origin:'Mohan Farm · Kullu, 5,800ft', price:95, unit:'/litre', icon:'🥛', tag:'a2', badge:'A2 Milk', bc:'himachali', rating:5 },
-  { id:2, name:'Himalayan Desi Ghee', origin:'Negi Farm · Shimla, 6,200ft', price:920, unit:'/kg', icon:'✨', tag:'organic', badge:'Organic', bc:'organic', rating:5 },
-  { id:3, name:'Pahari Paneer', origin:'Thakur Dairy · Mandi, 4,500ft', price:320, unit:'/500g', icon:'🫕', tag:'organic', badge:'Organic', bc:'organic', rating:5 },
-  { id:4, name:'Wild Herb Butter', origin:'Chauhan Farm · Dharamsala, 4,800ft', price:240, unit:'/500g', icon:'🧈', tag:'bestseller', badge:'Bestseller', bc:'bestseller', rating:5 },
-  { id:5, name:'Pahari Dahi (Curd)', origin:'Ram Singh · Chamba, 5,200ft', price:85, unit:'/500g', icon:'🍦', tag:'a2', badge:'A2 Milk', bc:'himachali', rating:5 },
-  { id:6, name:'Himalayan Cheese', origin:'Kapoor Farm · Kinnaur, 7,000ft', price:680, unit:'/250g', icon:'🧀', tag:'bestseller', badge:'Bestseller', bc:'bestseller', rating:5 },
-  { id:7, name:'Cream (Malai)', origin:'Verma Dairy · Kangra, 3,800ft', price:180, unit:'/400g', icon:'🫙', tag:'organic', badge:'Organic', bc:'organic', rating:4 },
-  { id:8, name:'Kesar Kulfi', origin:'HimDairy Kitchen · Shimla', price:120, unit:'/4 pieces', icon:'🍨', tag:'bestseller', badge:'Bestseller', bc:'bestseller', rating:5 },
-];
-let cart = [];
-let activeFilter = 'all';
-
-const bgColors = {
-  a2:        'linear-gradient(135deg,#e8f5e9,#c8e6c9)',
-  organic:   'linear-gradient(135deg,#f1f8e9,#dcedc8)',
-  bestseller:'linear-gradient(135deg,#fff8e1,#ffecb3)',
-};
-
-function renderProducts(filter) {
-  const grid = document.getElementById('prodGrid');
-  const list = filter === 'all' ? products : products.filter(p => p.tag === filter);
-  grid.innerHTML = list.map(p => `
-    <div class="product-card">
-      <div class="product-img" style="background:${bgColors[p.tag]||bgColors.organic}">
-        <span class="p-badge ${p.bc}">${p.badge}</span>
-        <span class="altitude-tag">${p.origin.split('·')[1]?.trim().split(',')[1]?.trim() || 'Himachal'}</span>
-        ${p.icon}
-      </div>
-      <div class="product-body">
-        <div class="p-stars">${'★'.repeat(p.rating)}${'☆'.repeat(5-p.rating)}</div>
-        <div class="p-name"><span class="veg-mark"></span> ${p.name}</div>
-        <div class="p-origin">📍 ${p.origin}</div>
-        <span class="p-quality-link" onclick="event.stopPropagation();openQuality(${p.id})">🔍 Quality &amp; Traceability</span>
-        <div class="p-footer">
-          <div class="p-price">₹${p.price}<small>${p.unit}</small></div>
-          <button class="add-btn" onclick="addToCart(${p.id})">+</button>
-        </div>
-      </div>
-    </div>
-  `).join('');
-}
-
-function renderOrderProducts() {
-  const grid = document.getElementById('orderProductGrid');
-  if (!grid) return;
-  grid.innerHTML = products.map(p => `
-    <div class="opcard">
-      <div class="opcard-icon">${p.icon}</div>
-      <div class="opcard-name">${p.name}</div>
-      <div class="opcard-farm">📍 ${p.origin.split('·')[0].trim()}</div>
-      <div class="opcard-price">₹${p.price}<small>${p.unit}</small></div>
-      <div class="opcard-btns">
-        <button class="ocbtn-cart" onclick="addToCart(${p.id})">+ Cart</button>
-        <a href="https://wa.me/919459755408?text=Namaste%20HimDairy!%20Mujhe%20${encodeURIComponent(p.name)}%20order%20karna%20hai." target="_blank" class="ocbtn-wa">💬 WA</a>
-      </div>
-    </div>
-  `).join('');
-}
-
-// ── SUBSCRIPTIONS ──
-const milkPricePerLitre = 95; // A2 Pahari Milk, matches catalog price
-
-function updateDailyPrice() {
-  const qtyEl = document.getElementById('dcQty');
-  const freqEl = document.getElementById('dcFreq');
-  const timeEl = document.getElementById('dcTime');
-  if (!qtyEl) return;
-  const qty = parseFloat(qtyEl.value);
-  const freq = freqEl.value;
-  const time = timeEl.value;
-  const deliveries = freq === 'daily' ? 30 : 15;
-  const monthly = Math.round(milkPricePerLitre * qty * deliveries);
-  document.getElementById('dcMonthlyPrice').textContent = '₹' + monthly.toLocaleString('en-IN');
-  document.getElementById('dcDeliveries').textContent = deliveries + ' deliveries/month · Billed in advance';
-  const qtyLabel = qty === 1 ? '1 Litre' : '500 ml';
-  const msg = `Namaste HimDairy! Mujhe Daily Milk Subscription chahiye:\n- Quantity: ${qtyLabel}\n- Milk Type: A2 Cow Milk\n- Frequency: ${freq === 'daily' ? 'Daily' : 'Alternate Days'}\n- Delivery Time: ${time}\n- Estimated Monthly: ₹${monthly}\nPlease confirm and share payment details.`;
-  document.getElementById('dcWaBtn').href = 'https://wa.me/919459755408?text=' + encodeURIComponent(msg);
-}
-
-function startSubscription(planName, details) {
-  const msg = `Namaste HimDairy! Mujhe "${planName}" subscribe karna hai.\n${details}\nPlease details aur payment options bhejo.`;
-  window.open('https://wa.me/919459755408?text=' + encodeURIComponent(msg), '_blank');
-}
-
-// ── QUALITY & TRACEABILITY ──
-function openQuality(id) {
-  const p = products.find(x => x.id === id);
-  if (!p) return;
-  document.getElementById('qmName').textContent = p.name;
-  document.getElementById('qmOrigin').textContent = '📍 ' + p.origin;
-  const qrData = encodeURIComponent(window.location.origin + window.location.pathname + '#quality-' + p.id);
-  document.getElementById('qmQR').src = 'https://api.qrserver.com/v1/create-qr-code/?size=130x130&data=' + qrData;
-  document.getElementById('qualityModal').style.display = 'flex';
-}
-function closeQuality() {
-  document.getElementById('qualityModal').style.display = 'none';
-}
-
-function setFilter(el, filter) {
-  document.querySelectorAll('.ftab').forEach(t => t.classList.remove('active'));
-  el.classList.add('active');
-  activeFilter = filter;
-  renderProducts(filter);
-}
-
-function addToCart(id) {
-  const p = products.find(x => x.id === id);
-  const ex = cart.find(x => x.id === id);
-  if (ex) ex.qty++;
-  else cart.push({...p, qty:1});
-  updateCart();
-  showToast(`${p.icon} ${p.name} cart mein add hua!`);
-}
-
-function updateCart() {
-  const count = cart.reduce((a,c) => a+c.qty, 0);
-  document.getElementById('cartCount').textContent = count;
-  const body = document.getElementById('cartBody');
-  const foot = document.getElementById('cartFoot');
-  if (!cart.length) {
-    body.innerHTML = '<div class="cart-empty">Cart khaali hai.<br>Kuch fresh products add karein! 🏔️</div>';
-    foot.style.display = 'none'; return;
-  }
-  foot.style.display = 'block';
-  body.innerHTML = cart.map(c => `
-    <div class="cart-item-row">
-      <div class="ci-icon">${c.icon}</div>
-      <div><div class="ci-name">${c.name}</div><div class="ci-qty">${c.qty} × ₹${c.price}</div></div>
-      <div class="ci-price">₹${c.qty*c.price}</div>
-    </div>
-  `).join('');
-  document.getElementById('cartTotal').textContent = `₹${cart.reduce((a,c)=>a+c.qty*c.price,0)}`;
-}
-
-function openCart() {
-  document.getElementById('cartDrawer').classList.add('open');
-  document.getElementById('overlay').classList.add('open');
-}
-function closeCart() {
-  document.getElementById('cartDrawer').classList.remove('open');
-  document.getElementById('overlay').classList.remove('open');
-}
-
-let toastT;
-function showToast(msg) {
-  const t = document.getElementById('toast');
-  t.textContent = msg; t.classList.add('show');
-  clearTimeout(toastT);
-  toastT = setTimeout(() => t.classList.remove('show'), 2800);
-}
-
-function handleNL() {
-  const v = document.getElementById('nlEmail').value;
-  if (!v.includes('@')) { showToast('Sahi email daalo!'); return; }
-  showToast('Subscribe ho gaye! Pahaadon ki khabar aayegi 🏔️');
-  document.getElementById('nlEmail').value = '';
-}
-
-window.addEventListener('scroll', () => {
-  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 60);
-});
-
-renderProducts('all');
-renderOrderProducts();
-updateDailyPrice();
-</script>
+<script src="js/script.js" defer></script>
 </body>
 </html>
